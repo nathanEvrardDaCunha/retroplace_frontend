@@ -8,10 +8,37 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Geist', sans-serif;
+}
+
+html {
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: variables.$color-primary;
-    color: variables.$color-secondary;
+    font-family: variables.$font-main;
+    font-size: variables.$text-base;
+    font-weight: variables.$text-regular;
+    line-height: variables.$line-base;
+
+    min-height: 100vh; // Ensure body can fill viewport height
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

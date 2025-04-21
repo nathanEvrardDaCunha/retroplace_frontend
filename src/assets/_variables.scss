@@ -2,10 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
+// === FONTS === //
+
+$font-main: 'Geist', sans-serif;
+
 // === COLORS === //
 
-$color-primary: hsl(0, 0%, 95%);
-$color-secondary: hsl(0, 0%, 5%);
+$color-light-primary: hsl(0, 0%, 90%);
+$color-light-secondary: hsl(0, 0%, 10%);
+
+$color-dark-primary: hsl(0, 0%, 10%);
+$color-dark-secondary: hsl(0, 0%, 90%);
 
 // === FONT-SIZE === //
 

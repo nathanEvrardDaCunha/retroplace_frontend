@@ -2,3 +2,25 @@
 
 @use 'variables';
 @use 'reset';
+
+// === THEME === //
+
+:root {
+    --bg-color: #{variables.$color-light-primary};
+    --text-color: #{variables.$color-light-secondary};
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #{variables.$color-dark-primary};
+        --text-color: #{variables.$color-dark-secondary};
+    }
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
