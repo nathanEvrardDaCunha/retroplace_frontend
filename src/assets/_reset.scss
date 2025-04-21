@@ -1,0 +1,17 @@
+// === EXTERNAL === //
+
+@use 'variables';
+
+// === OVERALL === //
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Geist', sans-serif;
+}
+
+body {
+    background-color: variables.$color-primary;
+    color: variables.$color-secondary;
+}

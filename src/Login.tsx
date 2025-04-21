@@ -6,15 +6,15 @@ export function Login() {
     // TODO: Should indicate to user which fields are required before he submit for the first time.
 
     return (
-        <form>
+        <form className="test">
             <fieldset>
                 <legend>Log In to your Account</legend>
 
                 <label>Email</label>
-                <input type="email" placeholder="john.doe@gmail.com" required />
+                <input type="email" placeholder="john.doe@gmail.com" inputMode="email" required />
 
                 <label>Password</label>
-                <input type="password" placeholder="**************" required />
+                <input type="password" placeholder="**************" inputMode="text" required />
 
                 <button>Log In</button>
                 <button>Sign Up</button>
