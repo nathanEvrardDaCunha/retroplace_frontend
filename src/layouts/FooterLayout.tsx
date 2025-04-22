@@ -1,6 +1,8 @@
+import './FooterLayout.scss';
+
 export function FooterLayout() {
     return (
-        <footer>
+        <footer className="footer">
             <h2>Footer !</h2>
         </footer>
     );
