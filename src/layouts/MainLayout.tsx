@@ -1,7 +1,9 @@
+import './MainLayout.scss';
+
 interface MainLayoutProps {
     children: React.ReactNode;
 }
 
 export function MainLayout(props: MainLayoutProps) {
-    return <main>{props.children}</main>;
+    return <main className="main">{props.children}</main>;
 }
