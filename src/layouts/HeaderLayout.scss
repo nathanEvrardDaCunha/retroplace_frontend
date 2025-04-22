@@ -1,0 +1,23 @@
+// === EXTERNAL === //
+
+@use '../assets/variables';
+
+// === STYLE === //
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: variables.$spacing-6;
+    padding-block: variables.$spacing-3;
+    background-color: var(--color-tertiary);
+}
+
+.header__title {
+    margin-block: auto;
+}
+
+.button__icon {
+    height: variables.$spacing-6;
+    width: variables.$spacing-6;
+}

@@ -1,3 +1,5 @@
+import './HeaderLayout.scss';
+
 export function HeaderLayout() {
     // DESIGN: VISITOR need to be able to "Register", "Login" and "Browse" the products.
 
@@ -10,8 +12,9 @@ export function HeaderLayout() {
     // IDEA: Have a sidebar for desktop and burger menu for mobile ?
 
     return (
-        <header>
-            <h2>Header !</h2>
+        <header className="header">
+            <h2 className="header__title">Retroplace</h2>
+            <button className="button__icon">X</button>
         </header>
     );
 }

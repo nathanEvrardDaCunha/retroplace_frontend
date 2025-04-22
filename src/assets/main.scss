@@ -6,21 +6,23 @@
 // === THEME === //
 
 :root {
-    --bg-color: #{variables.$color-light-primary};
-    --text-color: #{variables.$color-light-secondary};
+    --color-primary: #{variables.$color-light-primary};
+    --color-secondary: #{variables.$color-light-secondary};
+    --color-tertiary: #{variables.$color-light-tertiary};
     color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #{variables.$color-dark-primary};
-        --text-color: #{variables.$color-dark-secondary};
+        --color-primary: #{variables.$color-dark-primary};
+        --color-secondary: #{variables.$color-dark-secondary};
+        --color-tertiary: #{variables.$color-dark-tertiary};
     }
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
