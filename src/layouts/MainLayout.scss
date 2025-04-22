@@ -9,6 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding-inline: variables.$spacing-6;
-    padding-block: variables.$spacing-3;
+    padding-block: variables.$spacing-7;
     background-color: var(--color-primary);
+
+    min-height: 100vh;
 }
