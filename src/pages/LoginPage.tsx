@@ -1,4 +1,7 @@
 import { LoginForm } from '../features/LoginForm';
+import { FooterLayout } from '../layouts/FooterLayout';
+import { HeaderLayout } from '../layouts/HeaderLayout';
+import { MainLayout } from '../layouts/MainLayout';
 
 export function LoginPage() {
     // TODO: When Backend implemented,  don't forget to implement an authentication system.
@@ -7,5 +10,13 @@ export function LoginPage() {
 
     // TODO: Should indicate to user which fields are required before he submit for the first time.
 
-    return <LoginForm />;
+    return (
+        <>
+            <HeaderLayout />
+            <MainLayout>
+                <LoginForm />
+            </MainLayout>
+            <FooterLayout />
+        </>
+    );
 }
