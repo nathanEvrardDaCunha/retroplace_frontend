@@ -1,7 +1,9 @@
+import './form-style.scss';
+
 interface FormProps {
     children: React.ReactNode;
 }
 
 export function Form(props: FormProps) {
-    return <form>{props.children}</form>;
+    return <form className="form">{props.children}</form>;
 }

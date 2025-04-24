@@ -17,9 +17,9 @@ html {
 
 body {
     font-family: variables.$font-main;
-    font-size: variables.$text-base;
-    font-weight: variables.$text-regular;
-    line-height: variables.$line-base;
+    font-size: variables.$font-size-base;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-base;
 
     min-height: 100vh; // Ensure body can fill viewport height
 }

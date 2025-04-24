@@ -1,0 +1,69 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === CLASSES === //
+
+.form {
+    margin-inline: auto;
+    min-width: 245px;
+    width: 100%;
+    max-width: 375px;
+}
+
+.form__fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.form__legend {
+    font-size: variables.$font-size-big;
+    font-weight: variables.$font-weight-black;
+    line-height: variables.$line-height-big;
+    margin-bottom: variables.$spacing-6;
+}
+
+.form__label {
+    font-size: variables.$font-size-base;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-base;
+    margin-bottom: variables.$spacing-1;
+}
+
+.form__input {
+    font-size: variables.$font-size-base;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-base;
+    margin-bottom: variables.$spacing-4;
+    padding-inline: variables.$spacing-3;
+    padding-block: variables.$spacing-1;
+}
+
+.form__buttons {
+    margin-top: variables.$spacing-6;
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-3;
+}
+
+.form__button {
+    padding-inline: variables.$spacing-3;
+    padding-block: variables.$spacing-1;
+    font-size: variables.$font-size-base;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-base;
+
+    border-radius: 8px;
+    border: none;
+
+    min-width: 75px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.form__link {
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-regular;
+    line-height: 1em;
+}

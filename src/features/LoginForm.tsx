@@ -1,25 +1,33 @@
-import { Form } from 'react-router-dom';
-import { FormButton } from '../components/FormButton';
-import { FormFieldset } from '../components/FormFieldset';
-import { FormInput } from '../components/FormInput';
-import { FormLabel } from '../components/FormLabel';
-import { FormLegend } from '../components/FormLegend';
+import '../components/form/form-style.scss';
+
+import { Form } from '../components/form/Form';
+import { FormButton } from '../components/form/FormButton';
+import { FormFieldset } from '../components/form/FormFieldset';
+import { FormInput } from '../components/form/FormInput';
+import { FormLabel } from '../components/form/FormLabel';
+import { FormLegend } from '../components/form/FormLegend';
 
 export function LoginForm() {
     return (
         <Form>
             <FormFieldset>
-                <FormLegend>Log In to your Account</FormLegend>
+                <FormLegend>Form - Log In</FormLegend>
 
-                <FormLabel htmlFor={'email-account'}>Email</FormLabel>
-                <FormInput idName={'email-account'} type={'email'} placeholder={'johndoe@gmail.com'} />
+                <section>
+                    <FormLabel htmlFor={'email-account'}>Email</FormLabel>
+                    <FormInput idName={'email-account'} type={'email'} placeholder={'johndoe@gmail.com'} />
+                </section>
 
-                <FormLabel htmlFor={'password-account'}>Password</FormLabel>
-                <FormInput idName={'password-account'} type={'password'} placeholder={'***********'} />
+                <section>
+                    <FormLabel htmlFor={'password-account'}>Password</FormLabel>
+                    <FormInput idName={'password-account'} type={'password'} placeholder={'***********'} />
+                </section>
 
-                <FormButton>Log In</FormButton>
-                <FormButton>Sign Up</FormButton>
-                <FormButton>Reset Password</FormButton>
+                <section>
+                    <FormButton>Log In</FormButton>
+                    <FormButton>Sign Up</FormButton>
+                    <FormButton>Reset Password</FormButton>
+                </section>
             </FormFieldset>
         </Form>
     );

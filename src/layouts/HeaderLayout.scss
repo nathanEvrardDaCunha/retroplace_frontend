@@ -16,6 +16,9 @@
 
 .header__title {
     margin-block: auto;
+    font-size: variables.$font-size-larger;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-larger;
 }
 
 .button__icon {

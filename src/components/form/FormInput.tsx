@@ -1,3 +1,5 @@
+import './form-style.scss';
+
 interface BaseInput {
     idName: string;
     placeholder?: string;
@@ -22,6 +24,7 @@ interface PasswordInput extends BaseInput {
 export function FormInput(props: TextInput | EmailInput | PasswordInput) {
     return (
         <input
+            className="form__input"
             id={props.idName}
             name={props.idName}
             type={props.type}
