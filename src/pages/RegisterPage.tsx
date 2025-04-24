@@ -1,3 +1,8 @@
+import { RegisterForm } from '../features/RegisterForm';
+import { FooterLayout } from '../layouts/FooterLayout';
+import { HeaderLayout } from '../layouts/HeaderLayout';
+import { MainLayout } from '../layouts/MainLayout';
+
 export function RegisterPage() {
     // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
 
@@ -5,5 +10,13 @@ export function RegisterPage() {
 
     // TODO: Should indicate to user which fields are required before he submit for the first time.
 
-    return <h1>Register new User</h1>;
+    return (
+        <>
+            <HeaderLayout />
+            <MainLayout>
+                <RegisterForm />
+            </MainLayout>
+            <FooterLayout />
+        </>
+    );
 }

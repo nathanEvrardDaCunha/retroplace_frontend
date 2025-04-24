@@ -13,6 +13,8 @@ export function LoginForm() {
             <FormFieldset>
                 <FormLegend>Form - Log In</FormLegend>
 
+                {/* TODO: Add description for each field */}
+
                 <section>
                     <FormLabel htmlFor={'email-account'}>Email</FormLabel>
                     <FormInput idName={'email-account'} type={'email'} placeholder={'johndoe@gmail.com'} />
@@ -22,6 +24,8 @@ export function LoginForm() {
                     <FormLabel htmlFor={'password-account'}>Password</FormLabel>
                     <FormInput idName={'password-account'} type={'password'} placeholder={'***********'} />
                 </section>
+
+                {/* TODO: Add Button for "Reset Password" */}
 
                 <section>
                     <FormButton>Log In</FormButton>
