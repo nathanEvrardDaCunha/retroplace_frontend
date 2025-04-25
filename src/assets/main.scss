@@ -9,6 +9,7 @@
     --color-primary: #{variables.$color-light-primary};
     --color-secondary: #{variables.$color-light-secondary};
     --color-tertiary: #{variables.$color-light-tertiary};
+    --color-four: #{variables.$color-light-four};
     color-scheme: light dark;
 }
 
@@ -17,6 +18,7 @@
         --color-primary: #{variables.$color-dark-primary};
         --color-secondary: #{variables.$color-dark-secondary};
         --color-tertiary: #{variables.$color-dark-tertiary};
+        --color-four: #{variables.$color-dark-four};
     }
 }
 

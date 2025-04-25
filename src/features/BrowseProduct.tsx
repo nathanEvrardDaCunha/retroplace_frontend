@@ -1,5 +1,8 @@
 import './BrowseProduct.scss';
 
+// IDEA: Separate into individual file "BrowseProduct", "FilterProduct" and "SortProduct".
+// => Then merge them together, maybe in "ProductPage" ?
+
 export function BrowseProduct() {
     // IDEA: Use "main" instead
     return (
@@ -19,112 +22,113 @@ export function BrowseProduct() {
 
             {/* // DESIGN: One section to browse the remaining product. */}
 
+            {/* TODO: Finish to style the button and make TSX Card components. */}
             <section className="browse">
                 <h2 className="browse__title">Browse available products</h2>
 
                 <section className="browse__products">
-                    <article>
-                        <figure>
-                            <img src="https://picsum.photos/200" alt="lorem picsum" />
-                            <figcaption>Lorem picsum</figcaption>
+                    <article className="product">
+                        <figure className="product__figure">
+                            <img className="product__image" src="https://picsum.photos/499" alt="lorem picsum" />
+                            <figcaption className="product__caption">Slightly Used Nintendo 3DS</figcaption>
                         </figure>
 
                         {/* IDEA: See to add a 0/5 rating information about the seller now or later. */}
-                        <section>
-                            <h4>Nintendo 3DS</h4>
-                            <p>12/01/2013</p>
-                            <p>Slightly Used</p>
-                            <p>13.99€</p>
+                        <section className="product__characteristics">
+                            <h4 className="product__title">Nintendo 3DS</h4>
+                            <p className="product__characteristic">12/01/2013</p>
+                            <p className="product__characteristic">Slightly Used</p>
+                            <p className="product__characteristic">13.99€</p>
                         </section>
 
                         {/* TODO: Return to the product page */}
                         {/* IDEA: Allow users to report, on the detailed page, the product if it infringe our policy */}
-                        <section>
-                            <button>See More</button>
+                        <section className="product__buttons">
+                            <button className="product_button">See More</button>
                         </section>
                     </article>
 
-                    <article>
-                        <figure>
-                            <img src="https://picsum.photos/200" alt="lorem picsum" />
-                            <figcaption>Lorem picsum</figcaption>
+                    <article className="product">
+                        <figure className="product__figure">
+                            <img className="product__image" src="https://picsum.photos/500" alt="lorem picsum" />
+                            <figcaption className="product__caption">Slightly Used Nintendo 3DS</figcaption>
                         </figure>
 
                         {/* IDEA: See to add a 0/5 rating information about the seller now or later. */}
-                        <section>
-                            <h4>Nintendo 3DS</h4>
-                            <p>12/01/2013</p>
-                            <p>Slightly Used</p>
-                            <p>13.99€</p>
+                        <section className="product__characteristics">
+                            <h4 className="product__title">Nintendo 3DS</h4>
+                            <p className="product__characteristic">12/01/2013</p>
+                            <p className="product__characteristic">Slightly Used</p>
+                            <p className="product__characteristic">13.99€</p>
                         </section>
 
                         {/* TODO: Return to the product page */}
                         {/* IDEA: Allow users to report, on the detailed page, the product if it infringe our policy */}
-                        <section>
-                            <button>See More</button>
+                        <section className="product__buttons">
+                            <button className="product_button">See More</button>
                         </section>
                     </article>
 
-                    <article>
-                        <figure>
-                            <img src="https://picsum.photos/200" alt="lorem picsum" />
-                            <figcaption>Lorem picsum</figcaption>
+                    <article className="product">
+                        <figure className="product__figure">
+                            <img className="product__image" src="https://picsum.photos/501" alt="lorem picsum" />
+                            <figcaption className="product__caption">Slightly Used Nintendo 3DS</figcaption>
                         </figure>
 
                         {/* IDEA: See to add a 0/5 rating information about the seller now or later. */}
-                        <section>
-                            <h4>Nintendo 3DS</h4>
-                            <p>12/01/2013</p>
-                            <p>Slightly Used</p>
-                            <p>13.99€</p>
+                        <section className="product__characteristics">
+                            <h4 className="product__title">Nintendo 3DS</h4>
+                            <p className="product__characteristic">12/01/2013</p>
+                            <p className="product__characteristic">Slightly Used</p>
+                            <p className="product__characteristic">13.99€</p>
                         </section>
 
                         {/* TODO: Return to the product page */}
                         {/* IDEA: Allow users to report, on the detailed page, the product if it infringe our policy */}
-                        <section>
-                            <button>See More</button>
+                        <section className="product__buttons">
+                            <button className="product_button">See More</button>
                         </section>
                     </article>
 
-                    <article>
-                        <figure>
-                            <img src="https://picsum.photos/200" alt="lorem picsum" />
-                            <figcaption>Lorem picsum</figcaption>
+                    <article className="product">
+                        <figure className="product__figure">
+                            <img className="product__image" src="https://picsum.photos/502" alt="lorem picsum" />
+                            <figcaption className="product__caption">Slightly Used Nintendo 3DS</figcaption>
                         </figure>
 
                         {/* IDEA: See to add a 0/5 rating information about the seller now or later. */}
-                        <section>
-                            <h4>Nintendo 3DS</h4>
-                            <p>12/01/2013</p>
-                            <p>Slightly Used</p>
-                            <p>13.99€</p>
+                        <section className="product__characteristics">
+                            <h4 className="product__title">Nintendo 3DS</h4>
+                            <p className="product__characteristic">12/01/2013</p>
+                            <p className="product__characteristic">Slightly Used</p>
+                            <p className="product__characteristic">13.99€</p>
                         </section>
 
                         {/* TODO: Return to the product page */}
                         {/* IDEA: Allow users to report, on the detailed page, the product if it infringe our policy */}
-                        <section>
-                            <button>See More</button>
+                        <section className="product__buttons">
+                            <button className="product_button">See More</button>
                         </section>
                     </article>
 
-                    <article>
-                        <figure>
-                            <img src="https://picsum.photos/200" alt="lorem picsum" />
-                            <figcaption>Lorem picsum</figcaption>
+                    <article className="product">
+                        <figure className="product__figure">
+                            <img className="product__image" src="https://picsum.photos/503" alt="lorem picsum" />
+                            <figcaption className="product__caption">Slightly Used Nintendo 3DS</figcaption>
                         </figure>
 
                         {/* IDEA: See to add a 0/5 rating information about the seller now or later. */}
-                        <section>
-                            <h4>Nintendo 3DS</h4>
-                            <p>12/01/2013</p>
-                            <p>Slightly Used</p>
-                            <p>13.99€</p>
+                        <section className="product__characteristics">
+                            <h4 className="product__title">Nintendo 3DS</h4>
+                            <p className="product__characteristic">12/01/2013</p>
+                            <p className="product__characteristic">Slightly Used</p>
+                            <p className="product__characteristic">13.99€</p>
                         </section>
 
                         {/* TODO: Return to the product page */}
                         {/* IDEA: Allow users to report, on the detailed page, the product if it infringe our policy */}
-                        <section>
-                            <button>See More</button>
+                        <section className="product__buttons">
+                            <button className="product_button">See More</button>
                         </section>
                     </article>
                 </section>

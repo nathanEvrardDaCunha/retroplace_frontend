@@ -18,6 +18,8 @@ const router = createBrowserRouter([
     { path: '/*', element: <NotFoundPage /> },
 ]);
 
+// IDEA: Maybe add Vitest to do Unit and Integration Test for when the project will become more feature rich.
+
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <RouterProvider router={router} />
