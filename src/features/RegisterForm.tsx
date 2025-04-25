@@ -1,83 +1,71 @@
-import '../components/form/form-style.scss';
-
 import { Form } from '../components/form/Form';
+import '../components/form/form-style.scss';
 import { FormButton } from '../components/form/FormButton';
-import { FormFieldset } from '../components/form/FormFieldset';
-import { FormInput } from '../components/form/FormInput';
-import { FormLabel } from '../components/form/FormLabel';
-import { FormLegend } from '../components/form/FormLegend';
-import { FormInputRadio } from '../components/form/FormInputRadio';
+import { FormDescription } from '../components/form/semantics/FormDescription';
+import { FormFieldset } from '../components/form/semantics/fieldset/FormFieldset';
+import { FormLabel } from '../components/form/semantics/FormLabel';
+import { FormLegend } from '../components/form/semantics/fieldset/FormLegend';
+import { FormSection } from '../components/form/semantics/FormSection';
+import { FormInputEmail } from '../components/form/inputs/input/FormInputEmail';
+import { FormInputRadio } from '../components/form/inputs/input/FormInputRadio';
+import { FormInputText } from '../components/form/inputs/input/FormInputText';
+import { FormInputPassword } from '../components/form/inputs/input/FormInputPassword';
 
 export function RegisterForm() {
+    function handleAction(formData: FormData) {
+        // prevent event default
+
+        console.log('Hello Form !');
+    }
     return (
-        <Form>
+        <Form action={handleAction}>
             <FormFieldset>
                 <FormLegend>Form - Create Account</FormLegend>
 
-                <section>
-                    <section>
+                <FormSection>
+                    <FormSection>
                         <FormLabel htmlFor={'username-account'}>Username</FormLabel>
-                        <p>Write down your username.</p>
-                        <FormInput idName={'username-account'} type={'text'} placeholder={'NostalgicBuyer73'} />
-                    </section>
+                        <FormDescription>Write down your username.</FormDescription>
+                        <FormInputText
+                            id={'username-account'}
+                            name={'username-account'}
+                            placeholder={'NostalgicBuyer73'}
+                        />
+                    </FormSection>
 
-                    <section>
+                    <FormSection>
                         <FormLabel htmlFor={'email-account'}>Email</FormLabel>
-                        <p>Write down your email address.</p>
-                        <FormInput idName={'email-account'} type={'email'} placeholder={'johndoe@gmail.com'} />
-                    </section>
+                        <FormDescription>Write down your email address.</FormDescription>
+                        <FormInputEmail id={'email-account'} name={'email-account'} />
+                    </FormSection>
 
-                    <section>
+                    <FormSection>
                         <FormLabel htmlFor={'password-account'}>Password</FormLabel>
-                        <p>Write down your password.</p>
-                        <FormInput idName={'password-account'} type={'password'} placeholder={'***********'} />
-                    </section>
+                        <FormDescription>Write down your password.</FormDescription>
+                        <FormInputPassword id={'password-account'} name={'password-account'} />
+                    </FormSection>
 
-                    {/* <section>
-                        <FormLabel htmlFor={'birthdate-account'}>Birthdate</FormLabel>
-                        <p>Input your birthdate.</p>
-                        <FormInput idName={'birthdate-account'} type={'date'} />
-                    </section> */}
-
-                    <section>
+                    <FormSection>
                         <FormButton>Next</FormButton>
-                    </section>
-                </section>
+                    </FormSection>
+                </FormSection>
 
-                <section>
-                    <p>Select the role of this account.</p>
-                    <section>
+                <FormSection>
+                    <FormDescription>Select the role of this account.</FormDescription>
+                    <FormSection>
                         <FormInputRadio id={'buyer'} name={'role-account'} value={'buyer'} />
                         <FormLabel htmlFor={'buyer'}>Buyer</FormLabel>
-                    </section>
+                    </FormSection>
 
-                    <section>
+                    <FormSection>
                         <FormInputRadio id={'seller'} name={'role-account'} value={'seller'} />
                         <FormLabel htmlFor={'seller'}>Seller</FormLabel>
-                    </section>
+                    </FormSection>
 
-                    {/* <FormSection>
-                        <FormDescription>Select your favorite programming language.</FormDescription>
-                        <FormSection>
-                            <FormInputRadio id="rust" name="favorite-language" value="rust" />
-                            <FormLabel htmlFor="rust">Rust</FormLabel>
-                        </FormSection>
-
-                        <FormSection>
-                            <FormInputRadio id="golang" name="favorite-language" value="golang" />
-                            <FormLabel htmlFor="golang">Golang</FormLabel>
-                        </FormSection>
-
-                        <FormSection>
-                            <FormInputRadio id="javascript" name="favorite-language" value="javascript" />
-                            <FormLabel htmlFor="javascript">JavaScript</FormLabel>
-                        </FormSection>
-                    </FormSection> */}
-
-                    <section>
+                    <FormSection>
                         <FormButton>Submit</FormButton>
-                    </section>
-                </section>
+                    </FormSection>
+                </FormSection>
             </FormFieldset>
         </Form>
     );

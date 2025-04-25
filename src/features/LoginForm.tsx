@@ -1,37 +1,45 @@
-import '../components/form/form-style.scss';
-
 import { Form } from '../components/form/Form';
+import '../components/form/form-style.scss';
 import { FormButton } from '../components/form/FormButton';
-import { FormFieldset } from '../components/form/FormFieldset';
-import { FormInput } from '../components/form/FormInput';
-import { FormLabel } from '../components/form/FormLabel';
-import { FormLegend } from '../components/form/FormLegend';
+import { FormDescription } from '../components/form/semantics/FormDescription';
+import { FormFieldset } from '../components/form/semantics/fieldset/FormFieldset';
+import { FormLabel } from '../components/form/semantics/FormLabel';
+import { FormLegend } from '../components/form/semantics/fieldset/FormLegend';
+import { FormInputPassword } from '../components/form/inputs/input/FormInputPassword';
+import { FormSection } from '../components/form/semantics/FormSection';
+import { FormInputEmail } from '../components/form/inputs/input/FormInputEmail';
 
 export function LoginForm() {
+    function handleAction(formData: FormData) {
+        // prevent event default
+
+        console.log('Hello Form !');
+    }
+
     return (
-        <Form>
+        <Form action={handleAction}>
             <FormFieldset>
                 <FormLegend>Form - Log In</FormLegend>
 
                 {/* TODO: Add description for each field */}
 
-                <section>
+                <FormSection>
                     <FormLabel htmlFor={'email-account'}>Email</FormLabel>
-                    <FormInput idName={'email-account'} type={'email'} placeholder={'johndoe@gmail.com'} />
-                </section>
+                    <FormDescription>Write down your email address.</FormDescription>
+                    <FormInputEmail id={'email-account'} name={'email-account'} />
+                </FormSection>
 
-                <section>
+                <FormSection>
                     <FormLabel htmlFor={'password-account'}>Password</FormLabel>
-                    <FormInput idName={'password-account'} type={'password'} placeholder={'***********'} />
-                </section>
+                    <FormDescription>Write down your password.</FormDescription>
+                    <FormInputPassword id={'password-account'} name={'password-account'} />
+                </FormSection>
 
-                {/* TODO: Add Button for "Reset Password" */}
-
-                <section>
+                <FormSection>
                     <FormButton>Log In</FormButton>
                     <FormButton>Sign Up</FormButton>
                     <FormButton>Reset Password</FormButton>
-                </section>
+                </FormSection>
             </FormFieldset>
         </Form>
     );
