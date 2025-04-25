@@ -4,6 +4,8 @@
 
 // === CLASSES === //
 
+// TODO: Use CSS grid layout to organize Header, Footer and Main
+
 .header {
     display: flex;
     flex-direction: row;
@@ -24,4 +26,25 @@
 .button__icon {
     height: variables.$spacing-6;
     width: variables.$spacing-6;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: variables.$spacing-6;
+    padding-block: variables.$spacing-7;
+    background-color: var(--color-primary);
+
+    min-height: 100vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: variables.$spacing-6;
+    padding-block: variables.$spacing-3;
+    background-color: var(--color-primary);
+    border-top: 1px solid var(--color-tertiary);
 }

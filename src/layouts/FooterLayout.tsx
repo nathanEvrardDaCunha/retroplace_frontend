@@ -1,4 +1,4 @@
-import './FooterLayout.scss';
+import './layout-style.scss';
 
 export function FooterLayout() {
     return (

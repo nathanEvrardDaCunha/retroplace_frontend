@@ -1,4 +1,4 @@
-import './MainLayout.scss';
+import './layout-style.scss';
 
 interface MainLayoutProps {
     children: React.ReactNode;

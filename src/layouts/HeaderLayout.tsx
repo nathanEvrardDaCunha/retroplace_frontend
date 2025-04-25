@@ -1,4 +1,4 @@
-import './HeaderLayout.scss';
+import './layout-style.scss';
 
 export function HeaderLayout() {
     // DESIGN: VISITOR need to be able to "Register", "Login" and "Browse" the products.
