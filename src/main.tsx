@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { ProductPage } from './pages/ProductPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     { path: '/login', element: <LoginPage /> },
     { path: '/register', element: <RegisterPage /> },
     { path: '/products', element: <ProductPage /> },
+    { path: '/*', element: <NotFoundPage /> },
 ]);
 
 createRoot(document.getElementById('root')!).render(
