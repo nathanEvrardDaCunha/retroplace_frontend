@@ -17,6 +17,9 @@ export function RegisterForm() {
 
         console.log('Hello Form !');
     }
+
+    // TODO: When form is a success, redirect to login page.
+    // TODO: When form is a success, tell it to the user through a message.
     return (
         <Form action={handleAction}>
             <FormFieldset>

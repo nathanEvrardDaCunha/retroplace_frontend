@@ -16,12 +16,12 @@ export function LoginForm() {
         console.log('Hello Form !');
     }
 
+    // TODO: When form is a success, redirect to personal-account page.
+    // TODO: When form is a success, tell it to the user through a message.
     return (
         <Form action={handleAction}>
             <FormFieldset>
                 <FormLegend>Form - Log In</FormLegend>
-
-                {/* TODO: Add description for each field */}
 
                 <FormSection>
                     <FormLabel htmlFor={'email-account'}>Email</FormLabel>
