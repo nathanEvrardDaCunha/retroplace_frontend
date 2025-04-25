@@ -1,6 +1,6 @@
-import { FooterLayout } from '../layouts/FooterLayout';
-import { HeaderLayout } from '../layouts/HeaderLayout';
-import { MainLayout } from '../layouts/MainLayout';
+import { FooterLayout } from '../../layouts/FooterLayout';
+import { HeaderLayout } from '../../layouts/HeaderLayout';
+import { MainLayout } from '../../layouts/MainLayout';
 
 export function HomePage() {
     return (

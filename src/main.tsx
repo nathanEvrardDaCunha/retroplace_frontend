@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HomePage } from './pages/HomePage';
-import { LoginPage } from './pages/LoginPage';
-import { RegisterPage } from './pages/RegisterPage';
-import { ProductPage } from './pages/ProductPage';
-import { NotFoundPage } from './pages/NotFoundPage';
+import { HomePage } from './pages/shared/HomePage';
+import { LoginPage } from './pages/shared/LoginPage';
+import { RegisterPage } from './pages/shared/RegisterPage';
+import { ProductPage } from './pages/shared/ProductPage';
+import { NotFoundPage } from './pages/shared/NotFoundPage';
 
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
 

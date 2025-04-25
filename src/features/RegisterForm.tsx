@@ -1,15 +1,15 @@
-import { Form } from '../components/form/Form';
+import { Form } from '../components/form/semantics/Form';
 import '../components/form/form-style.scss';
 import { FormButton } from '../components/form/FormButton';
 import { FormDescription } from '../components/form/semantics/FormDescription';
 import { FormFieldset } from '../components/form/semantics/fieldset/FormFieldset';
-import { FormLabel } from '../components/form/semantics/FormLabel';
+import { FormLabel } from '../components/form/inputs/FormLabel';
 import { FormLegend } from '../components/form/semantics/fieldset/FormLegend';
 import { FormSection } from '../components/form/semantics/FormSection';
 import { FormInputEmail } from '../components/form/inputs/input/FormInputEmail';
 import { FormInputRadio } from '../components/form/inputs/input/FormInputRadio';
 import { FormInputText } from '../components/form/inputs/input/FormInputText';
-import { FormInputPassword } from '../components/form/inputs/input/FormInputPassword';
+import { FormInputPassword } from '../components/form/inputs/input/FormPassword';
 
 export function RegisterForm() {
     function handleAction(formData: FormData) {

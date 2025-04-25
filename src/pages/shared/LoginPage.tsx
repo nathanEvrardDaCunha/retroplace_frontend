@@ -1,7 +1,7 @@
-import { LoginForm } from '../features/LoginForm';
-import { FooterLayout } from '../layouts/FooterLayout';
-import { HeaderLayout } from '../layouts/HeaderLayout';
-import { MainLayout } from '../layouts/MainLayout';
+import { LoginForm } from '../../features/LoginForm';
+import { FooterLayout } from '../../layouts/FooterLayout';
+import { HeaderLayout } from '../../layouts/HeaderLayout';
+import { MainLayout } from '../../layouts/MainLayout';
 
 export function LoginPage() {
     // TODO: When Backend implemented,  don't forget to implement an authentication system.
