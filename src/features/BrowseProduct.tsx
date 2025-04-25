@@ -1,6 +1,7 @@
 export function BrowseProduct() {
+    // IDEA: Use "main" instead
     return (
-        <>
+        <main>
             {/* // DESIGN: One section to filter the products.
         // => Console System, Type of Product (Video Game, Figurines, Consoles, Limited Edition Stuff...)... */}
 
@@ -124,6 +125,6 @@ export function BrowseProduct() {
                     </section>
                 </article>
             </section>
-        </>
+        </main>
     );
 }

@@ -7,9 +7,9 @@ export function NotFoundPage() {
     return (
         <>
             <HeaderLayout />
-            <MainLayout>
+            <main>
                 <h1>Error 404: Page not found</h1>
-            </MainLayout>
+            </main>
             <FooterLayout />
         </>
     );

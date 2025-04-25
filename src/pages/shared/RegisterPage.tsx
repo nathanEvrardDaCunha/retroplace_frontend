@@ -1,7 +1,6 @@
 import { RegisterForm } from '../../features/RegisterForm';
 import { FooterLayout } from '../../layouts/FooterLayout';
 import { HeaderLayout } from '../../layouts/HeaderLayout';
-import { MainLayout } from '../../layouts/MainLayout';
 
 export function RegisterPage() {
     // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
@@ -13,9 +12,7 @@ export function RegisterPage() {
     return (
         <>
             <HeaderLayout />
-            <MainLayout>
-                <RegisterForm />
-            </MainLayout>
+            <RegisterForm />
             <FooterLayout />
         </>
     );
