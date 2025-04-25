@@ -28,16 +28,16 @@
     width: variables.$spacing-6;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: variables.$spacing-6;
-    padding-block: variables.$spacing-7;
-    background-color: var(--color-primary);
+// .main {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     padding-inline: variables.$spacing-6;
+//     padding-block: variables.$spacing-7;
+//     background-color: var(--color-primary);
 
-    min-height: 100vh;
-}
+//     min-height: 100vh;
+// }
 
 .footer {
     display: flex;
