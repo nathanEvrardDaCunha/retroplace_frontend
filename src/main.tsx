@@ -9,7 +9,8 @@ import { NotFoundPage } from './pages/shared/NotFoundPage';
 
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
 
-// TODO: Should add a custom 404 page.
+// TODO: Add css cursor property for every thing that are interactive.
+
 const router = createBrowserRouter([
     { path: '/', element: <HomePage /> },
     { path: '/login', element: <LoginPage /> },

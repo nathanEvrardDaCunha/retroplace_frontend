@@ -10,6 +10,7 @@
     --color-secondary: #{variables.$color-light-secondary};
     --color-tertiary: #{variables.$color-light-tertiary};
     --color-four: #{variables.$color-light-four};
+    --color-accent: #{variables.$color-light-accent};
     color-scheme: light dark;
 }
 
@@ -19,6 +20,7 @@
         --color-secondary: #{variables.$color-dark-secondary};
         --color-tertiary: #{variables.$color-dark-tertiary};
         --color-four: #{variables.$color-dark-four};
+        --color-accent: #{variables.$color-dark-accent};
     }
 }
 

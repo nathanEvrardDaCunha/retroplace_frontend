@@ -1,0 +1,31 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === PRODUCT === //
+
+.button {
+    transition: all 0.1s ease-in-out;
+
+    width: fit-content;
+    padding-inline: variables.$spacing-4;
+    padding-block: variables.$spacing-2;
+    border-radius: variables.$spacing-1;
+    border: none;
+
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-bold;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: hsla(30, 100%, 60%, 0.75);
+        color: var(--color-primary);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
