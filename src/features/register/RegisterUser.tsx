@@ -28,62 +28,59 @@ export function RegisterUser() {
                     <FormFieldset>
                         <FormLegend>Register</FormLegend>
 
-                        <FormSection>
-                            <FormSection>
-                                <FormLabel variant="label" htmlFor={'username-account'}>
-                                    Username
-                                </FormLabel>
-                                <FormDescription variant="description">Write down your username.</FormDescription>
-                                <FormInputText
-                                    id={'username-account'}
-                                    name={'username-account'}
-                                    placeholder={'NostalgicBuyer73'}
-                                />
-                            </FormSection>
+                        <FormSection variant="field">
+                            <FormLabel variant="label" htmlFor={'username-account'}>
+                                Username
+                            </FormLabel>
+                            <FormDescription variant="description">Write down your username.</FormDescription>
+                            <FormInputText
+                                id={'username-account'}
+                                name={'username-account'}
+                                placeholder={'NostalgicBuyer73'}
+                            />
+                        </FormSection>
 
-                            <FormSection>
-                                <FormLabel variant="label" htmlFor={'email-account'}>
-                                    Email
-                                </FormLabel>
-                                <FormDescription variant="description">Write down your email address.</FormDescription>
-                                <FormInputEmail id={'email-account'} name={'email-account'} />
-                            </FormSection>
+                        <FormSection variant="field">
+                            <FormLabel variant="label" htmlFor={'email-account'}>
+                                Email
+                            </FormLabel>
+                            <FormDescription variant="description">Write down your email address.</FormDescription>
+                            <FormInputEmail id={'email-account'} name={'email-account'} />
+                        </FormSection>
 
-                            <FormSection>
-                                <FormLabel variant="label" htmlFor={'password-account'}>
-                                    Password
-                                </FormLabel>
-                                <FormDescription variant="description">Write down your password.</FormDescription>
-                                <FormInputPassword id={'password-account'} name={'password-account'} />
-                            </FormSection>
+                        <FormSection variant="field">
+                            <FormLabel variant="label" htmlFor={'password-account'}>
+                                Password
+                            </FormLabel>
+                            <FormDescription variant="description">Write down your password.</FormDescription>
+                            <FormInputPassword id={'password-account'} name={'password-account'} />
+                        </FormSection>
 
-                            {/* <FormSection>
+                        {/* <FormSection>
                                 <FormButton>Next</FormButton>
                             </FormSection> */}
 
-                            <FormSection>
-                                <FormDescription variant="label">Role</FormDescription>
-                                <FormDescription variant="description">
-                                    Select the role of this account.
-                                </FormDescription>
-                                <FormSection>
-                                    <FormInputRadio id={'buyer'} name={'role-account'} value={'buyer'} />
-                                    <FormLabel variant="input" htmlFor={'buyer'}>
-                                        Buyer
-                                    </FormLabel>
-                                </FormSection>
+                        <FormSection variant="field">
+                            <FormDescription variant="label">Role</FormDescription>
+                            <FormDescription variant="description">Select the role of this account.</FormDescription>
 
-                                <FormSection>
-                                    <FormInputRadio id={'seller'} name={'role-account'} value={'seller'} />
-                                    <FormLabel variant="input" htmlFor={'seller'}>
-                                        Seller
-                                    </FormLabel>
-                                </FormSection>
-
-                                <FormSection>
-                                    <Button>Submit</Button>
-                                </FormSection>
+                            <FormSection variant="radio">
+                                <FormInputRadio id={'buyer'} name={'role-account'} value={'buyer'} />
+                                <FormLabel variant="radio" htmlFor={'buyer'}>
+                                    Buyer
+                                </FormLabel>
                             </FormSection>
+
+                            <FormSection variant="radio">
+                                <FormInputRadio id={'seller'} name={'role-account'} value={'seller'} />
+                                <FormLabel variant="radio" htmlFor={'seller'}>
+                                    Seller
+                                </FormLabel>
+                            </FormSection>
+                        </FormSection>
+
+                        <FormSection variant="button">
+                            <Button>Submit</Button>
                         </FormSection>
                     </FormFieldset>
                 </Form>

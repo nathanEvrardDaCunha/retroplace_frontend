@@ -13,6 +13,7 @@ export function FormInputRadio(props: FormInputRadioProps) {
             type={'radio'}
             disabled={props.disabled === undefined ? false : props.disabled}
             value={props.value}
+            className="form__input--radio"
         />
     );
 }

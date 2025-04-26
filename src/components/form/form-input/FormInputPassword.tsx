@@ -15,6 +15,7 @@ export function FormInputPassword(props: FormInputPasswordProps) {
             required={props.required === undefined ? true : props.required}
             disabled={props.disabled === undefined ? false : props.disabled}
             placeholder={props.placeholder === undefined ? '***********' : props.placeholder}
+            className="form__input--password"
         />
     );
 }

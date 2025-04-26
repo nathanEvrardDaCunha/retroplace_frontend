@@ -1,7 +1,7 @@
 interface FormLabelProps {
     htmlFor: string;
     children: string;
-    variant: 'label' | 'input';
+    variant: 'label' | 'radio';
 }
 
 export function FormLabel(props: FormLabelProps) {
@@ -14,7 +14,7 @@ export function FormLabel(props: FormLabelProps) {
     }
 
     return (
-        <label className="form__input" htmlFor={props.htmlFor}>
+        <label className="form__radio--label" htmlFor={props.htmlFor}>
             {props.children}
         </label>
     );
