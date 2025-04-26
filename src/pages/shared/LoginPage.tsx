@@ -1,6 +1,6 @@
 // TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
 
-import { LoginForm } from '../../features/login/LoginForm';
+import { LoginUser } from '../../features/login/LoginUser';
 import { FooterLayout } from '../../layouts/FooterLayout';
 import { HeaderLayout } from '../../layouts/HeaderLayout';
 
@@ -14,7 +14,7 @@ export function LoginPage() {
     return (
         <>
             <HeaderLayout />
-            <LoginForm />
+            <LoginUser />
             <FooterLayout />
         </>
     );

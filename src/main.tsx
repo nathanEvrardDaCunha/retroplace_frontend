@@ -10,6 +10,11 @@ import { ProductPage } from './pages/shared/ProductPage';
 import { RegisterPage } from './pages/shared/RegisterPage';
 
 // TODO: Add css cursor property for every thing that are interactive.
+// TODO: Need to do a burger menu later
+
+// TODO: 1. - Modernize the navbar
+// TODO: 2. - DO the "Sort" and "Filter" UI for "Browse Product"
+// TODO: 3. - Create "Browse Account"
 
 const router = createBrowserRouter([
     { path: '/', element: <HomePage /> },
