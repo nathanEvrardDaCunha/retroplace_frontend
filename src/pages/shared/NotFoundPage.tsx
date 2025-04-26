@@ -1,7 +1,7 @@
+// TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
+
 import { FooterLayout } from '../../layouts/FooterLayout';
 import { HeaderLayout } from '../../layouts/HeaderLayout';
-
-// TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
 
 // TODO: Create a TSX ErrorMessage component with proper feature to display error ?
 

@@ -1,11 +1,11 @@
-import { Card } from '../components/card/Card';
-import { CardItem } from '../components/card/CardItem';
-import { CardSection } from '../components/card/CardSection';
-import { CardTitle } from '../components/card/CardTitle';
-import { CardFigCaption } from '../components/card/figures/CardFigCaption';
-import { CardFigure } from '../components/card/figures/CardFigure';
-import { CardImage } from '../components/card/figures/CardImage';
-import { Button } from '../components/shared/Button';
+import { Card } from '../../components/card/Card';
+import { CardItem } from '../../components/card/card-other/CardItem';
+import { CardSection } from '../../components/card/card-other/CardSection';
+import { CardTitle } from '../../components/card/card-other/CardTitle';
+import { CardFigCaption } from '../../components/card/card-figure/CardFigCaption';
+import { CardFigure } from '../../components/card/card-figure/CardFigure';
+import { CardImage } from '../../components/card/card-figure/CardImage';
+import { Button } from '../../components/shared/Button';
 import './BrowseProduct.scss';
 
 // TODO: Implement procedural card generation logic but with fake data through data structure.

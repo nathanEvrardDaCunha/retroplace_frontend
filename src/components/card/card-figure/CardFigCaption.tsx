@@ -1,5 +1,3 @@
-import '../BrowseProduct.scss';
-
 interface CardFigCaptionProps {
     children: string;
 }

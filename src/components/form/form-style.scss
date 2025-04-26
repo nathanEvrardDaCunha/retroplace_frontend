@@ -2,68 +2,43 @@
 
 @use '../../assets/variables';
 
-// === CLASSES === //
+// === CLASS === //
 
 .form {
-    margin-inline: auto;
-    min-width: 245px;
-    width: 100%;
-    max-width: 375px;
+    // padding-inline: variables.$spacing-6;
+    // background-color: var(--color-primary);
+    // border-radius: variables.$spacing-1;
+    // border: none;
+    // padding: 1rem;
 }
 
 .form__fieldset {
-    display: flex;
-    flex-direction: column;
+    // height: 100%;
+    // width: 100%;
+    // margin: 2rem;
+    padding: 1rem;
+    border-radius: variables.$spacing-1;
     border: none;
+    background-color: var(--color-primary);
+    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
 }
 
 .form__legend {
-    font-size: variables.$font-size-big;
+    background-color: var(--color-primary);
+    border-radius: variables.$spacing-1;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
+
+    font-size: variables.$font-size-bigger;
     font-weight: variables.$font-weight-black;
-    line-height: variables.$line-height-big;
-    margin-bottom: variables.$spacing-6;
+    color: var(--color-secondary);
 }
+
+// Width 100% for everything (e.g: input) in the form ?
 
 .form__label {
-    font-size: variables.$font-size-base;
-    font-weight: variables.$font-weight-regular;
-    line-height: variables.$line-height-base;
-    margin-bottom: variables.$spacing-1;
-}
-
-.form__input {
-    font-size: variables.$font-size-base;
-    font-weight: variables.$font-weight-regular;
-    line-height: variables.$line-height-base;
-    margin-bottom: variables.$spacing-4;
-    padding-inline: variables.$spacing-3;
-    padding-block: variables.$spacing-1;
-}
-
-.form__buttons {
-    margin-top: variables.$spacing-6;
-    display: flex;
-    flex-direction: column;
-    gap: variables.$spacing-3;
-}
-
-.form__button {
-    padding-inline: variables.$spacing-3;
-    padding-block: variables.$spacing-1;
-    font-size: variables.$font-size-base;
-    font-weight: variables.$font-weight-regular;
-    line-height: variables.$line-height-base;
-
-    border-radius: 8px;
-    border: none;
-
-    min-width: 75px;
-    width: 100%;
-    max-width: fit-content;
-}
-
-.form__link {
-    font-size: variables.$font-size-small;
-    font-weight: variables.$font-weight-regular;
-    line-height: 1em;
+    font-size: variables.$font-size-large;
+    font-weight: variables.$font-weight-bold;
+    color: var(--color-secondary);
 }

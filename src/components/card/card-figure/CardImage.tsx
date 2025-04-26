@@ -1,5 +1,3 @@
-import '../BrowseProduct.scss';
-
 interface CardImageProps {
     src: string;
     alt: string;

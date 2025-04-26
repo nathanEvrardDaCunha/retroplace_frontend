@@ -1,8 +1,8 @@
-import { LoginForm } from '../../features/LoginForm';
+// TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
+
+import { LoginForm } from '../../features/login/LoginForm';
 import { FooterLayout } from '../../layouts/FooterLayout';
 import { HeaderLayout } from '../../layouts/HeaderLayout';
-
-// TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
 
 export function LoginPage() {
     // TODO: When Backend implemented,  don't forget to implement an authentication system.

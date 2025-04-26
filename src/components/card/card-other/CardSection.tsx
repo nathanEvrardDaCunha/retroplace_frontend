@@ -1,5 +1,3 @@
-import './BrowseProduct.scss';
-
 interface CardSectionProps {
     children: React.ReactNode;
     variant: 'characteristics' | 'buttons';

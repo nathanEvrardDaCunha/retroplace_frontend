@@ -3,5 +3,5 @@ interface FormLegendProps {
 }
 
 export function FormLegend(props: FormLegendProps) {
-    return <legend>{props.children}</legend>;
+    return <legend className="form__legend">{props.children}</legend>;
 }

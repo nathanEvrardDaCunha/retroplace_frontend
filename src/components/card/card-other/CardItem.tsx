@@ -1,5 +1,3 @@
-import './BrowseProduct.scss';
-
 interface CardItemProps {
     children: string;
     variant: 'item' | 'price';
