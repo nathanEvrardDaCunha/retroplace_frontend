@@ -1,16 +1,28 @@
 // TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
 
-import { FooterLayout } from '../../layouts/FooterLayout';
-import { HeaderLayout } from '../../layouts/HeaderLayout';
+import { LayoutContent } from '../../layouts/LayoutContent';
+import { LayoutFooter } from '../../layouts/LayoutFooter';
+import { LayoutGrid } from '../../layouts/LayoutGrid';
+import { LayoutHeader } from '../../layouts/LayoutHeader';
+
+import '../../layouts/layout-style.scss';
 
 export function HomePage() {
     return (
-        <>
-            <HeaderLayout />
-            <main>
+        // <div className="layout-grid">
+        //     <LayoutHeader />
+        //     <main>
+        //         <h1>Home Page</h1>
+        //     </main>
+        //     <LayoutFooter />
+        // </div>
+
+        <LayoutGrid>
+            <LayoutHeader />
+            <LayoutContent>
                 <h1>Home Page</h1>
-            </main>
-            <FooterLayout />
-        </>
+            </LayoutContent>
+            <LayoutFooter />
+        </LayoutGrid>
     );
 }

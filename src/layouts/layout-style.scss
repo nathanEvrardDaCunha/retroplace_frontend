@@ -4,48 +4,30 @@
 
 // === CLASSES === //
 
-// TODO: Use CSS grid layout to organize Header, Footer and Main
-
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: variables.$spacing-6;
-    padding-block: variables.$spacing-3;
-    background-color: var(--color-primary);
-    border-bottom: 1px solid var(--color-tertiary);
+// Layout
+.layout-grid {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'container container container'
+        'footer footer footer';
 }
 
-.header__title {
-    margin-block: auto;
-    font-size: variables.$font-size-larger;
-    font-weight: variables.$font-weight-regular;
-    line-height: variables.$line-height-larger;
+// Header
+.layout-header {
+    grid-area: header;
 }
 
-.button__icon {
-    height: variables.$spacing-6;
-    width: variables.$spacing-6;
-    cursor: pointer;
+// Content
+.layout-content {
+    grid-area: container;
 }
 
-// .main {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     padding-inline: variables.$spacing-6;
-//     padding-block: variables.$spacing-7;
-//     background-color: var(--color-primary);
-
-//     min-height: 100vh;
+// .layout-content--fluid {
+//     grid-area: container;
 // }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: variables.$spacing-6;
-    padding-block: variables.$spacing-3;
-    background-color: var(--color-primary);
-    border-top: 1px solid var(--color-tertiary);
+// Footer
+.layout-footer {
+    grid-area: footer;
 }

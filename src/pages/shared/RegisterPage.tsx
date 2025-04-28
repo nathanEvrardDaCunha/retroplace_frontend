@@ -1,8 +1,11 @@
 // TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
 
+// IDEA: Rename FeatureUserCreation ?
 import { RegisterUser } from '../../features/register/RegisterUser';
-import { FooterLayout } from '../../layouts/FooterLayout';
-import { HeaderLayout } from '../../layouts/HeaderLayout';
+import { LayoutContent } from '../../layouts/LayoutContent';
+import { LayoutFooter } from '../../layouts/LayoutFooter';
+import { LayoutGrid } from '../../layouts/LayoutGrid';
+import { LayoutHeader } from '../../layouts/LayoutHeader';
 
 export function RegisterPage() {
     // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
@@ -12,10 +15,18 @@ export function RegisterPage() {
     // TODO: Should indicate to user which fields are required before he submit for the first time.
 
     return (
-        <>
-            <HeaderLayout />
-            <RegisterUser />
-            <FooterLayout />
-        </>
+        // <div>
+        //     <HeaderLayout />
+        //     <RegisterUser />
+        //     <FooterLayout />
+        // </div>
+
+        <LayoutGrid>
+            <LayoutHeader />
+            <LayoutContent>
+                <RegisterUser />
+            </LayoutContent>
+            <LayoutFooter />
+        </LayoutGrid>
     );
 }

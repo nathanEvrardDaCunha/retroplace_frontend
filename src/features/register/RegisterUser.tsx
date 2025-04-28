@@ -9,7 +9,6 @@ import { FormDescription } from '../../components/form/form-other/FormDescriptio
 import { FormLabel } from '../../components/form/form-other/FormLabel';
 import { FormSection } from '../../components/form/form-other/FormSection';
 import { Button } from '../../components/shared/Button';
-import './register-style.scss';
 
 export function RegisterUser() {
     function handleAction(formData: FormData) {
@@ -21,8 +20,8 @@ export function RegisterUser() {
     // TODO: When form is a success, redirect to login page.
     // TODO: When form is a success, tell it to the user through a message.
     return (
-        <main className="main-register">
-            <section className="container-fluid">
+        <main className="main--register">
+            <section className="main--register__container--fluid">
                 <Form action={handleAction}>
                     <FormFieldset>
                         <FormLegend>Register</FormLegend>

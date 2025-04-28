@@ -1,5 +1,3 @@
-import './form-style.scss';
-
 interface FormProps {
     children: React.ReactNode;
     action: (formData: FormData) => void;

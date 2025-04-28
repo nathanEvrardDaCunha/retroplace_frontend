@@ -1,5 +1,3 @@
-import './card-style.scss';
-
 interface CardProps {
     children: React.ReactNode;
 }

@@ -7,7 +7,6 @@ import { FormDescription } from '../../components/form/form-other/FormDescriptio
 import { FormLabel } from '../../components/form/form-other/FormLabel';
 import { FormSection } from '../../components/form/form-other/FormSection';
 import { Button } from '../../components/shared/Button';
-import './login-style.scss';
 
 export function LoginUser() {
     function handleAction(formData: FormData) {

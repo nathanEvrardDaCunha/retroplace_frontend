@@ -1,5 +1,3 @@
-import './shared-style.scss';
-
 interface ButtonProps {
     children: React.ReactNode;
 }

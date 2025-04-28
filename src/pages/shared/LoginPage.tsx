@@ -1,8 +1,10 @@
 // TODO: For .main{} in CSS, always use the --color-tertiary, and use --color-primary for interactive element.
 
 import { LoginUser } from '../../features/login/LoginUser';
-import { FooterLayout } from '../../layouts/FooterLayout';
-import { HeaderLayout } from '../../layouts/HeaderLayout';
+import { LayoutContent } from '../../layouts/LayoutContent';
+import { LayoutFooter } from '../../layouts/LayoutFooter';
+import { LayoutGrid } from '../../layouts/LayoutGrid';
+import { LayoutHeader } from '../../layouts/LayoutHeader';
 
 export function LoginPage() {
     // TODO: When Backend implemented,  don't forget to implement an authentication system.
@@ -12,10 +14,18 @@ export function LoginPage() {
     // TODO: Should indicate to user which fields are required before he submit for the first time.
 
     return (
-        <>
-            <HeaderLayout />
-            <LoginUser />
-            <FooterLayout />
-        </>
+        // <div>
+        //     <LayoutHeader />
+        //     <LoginUser />
+        //     <LayoutFooter />
+        // </div>
+
+        <LayoutGrid>
+            <LayoutHeader />
+            <LayoutContent>
+                <LoginUser />
+            </LayoutContent>
+            <LayoutFooter />
+        </LayoutGrid>
     );
 }

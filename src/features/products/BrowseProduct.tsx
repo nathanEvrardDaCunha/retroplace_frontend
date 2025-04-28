@@ -6,7 +6,6 @@ import { CardFigCaption } from '../../components/card/card-figure/CardFigCaption
 import { CardFigure } from '../../components/card/card-figure/CardFigure';
 import { CardImage } from '../../components/card/card-figure/CardImage';
 import { Button } from '../../components/shared/Button';
-import './BrowseProduct.scss';
 
 // TODO: Implement procedural card generation logic but with fake data through data structure.
 
