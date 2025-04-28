@@ -16,12 +16,12 @@ html {
 }
 
 body {
-    font-family: variables.$font-main;
-    font-size: variables.$font-size-base;
-    font-weight: variables.$font-weight-regular;
-    line-height: variables.$line-height-base;
+    font-family: variables.$font-geist;
+    // font-size: variables.$font-size-3;
+    // font-weight: variables.$font-weight-400;
+    // line-height: variables.$line-height-3;
 
-    min-height: 100vh; // Ensure body can fill viewport height
+    min-height: 100vh;
 }
 
 img,

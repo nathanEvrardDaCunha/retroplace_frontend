@@ -22,21 +22,21 @@
     padding: variables.$spacing-3;
     border-radius: variables.$spacing-1;
     border: none;
-    background-color: var(--color-primary);
+    background-color: var(--color-light-neutral-90);
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
 }
 
 // Legend
 .form__legend {
-    background-color: var(--color-primary);
+    background-color: var(--color-light-neutral-90);
     border-radius: variables.$spacing-1;
     border: none;
     padding: 1rem;
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
 
     font-size: variables.$font-size-bigger;
-    font-weight: variables.$font-weight-black;
-    color: var(--color-secondary);
+    font-weight: variables.$font-weight-900;
+    color: var(--color-light-neutral-10);
     margin-block-end: variables.$spacing-3;
     width: 100%;
     text-align: center;
@@ -45,8 +45,8 @@
 // Label
 .form__label {
     font-size: variables.$font-size-large;
-    font-weight: variables.$font-weight-bold;
-    color: var(--color-secondary);
+    font-weight: variables.$font-weight-700;
+    color: var(--color-light-neutral-10);
     margin-block-end: variables.$spacing-0;
     width: 100%;
 }
@@ -54,8 +54,8 @@
 // Description
 .form__description {
     font-size: variables.$font-size-base;
-    font-weight: variables.$font-weight-regular;
-    color: var(--color-four);
+    font-weight: variables.$font-weight-400;
+    color: var(--color-light-neutral-10);
     margin-block-end: variables.$spacing-0;
     width: 100%;
 }
@@ -72,7 +72,7 @@
     padding-inline: variables.$spacing-4;
     padding-block: variables.$spacing-1;
     font-size: variables.$font-size-small;
-    font-weight: variables.$font-weight-regular;
+    font-weight: variables.$font-weight-400;
     width: 100%;
 }
 
@@ -80,7 +80,7 @@
     padding-inline: variables.$spacing-4;
     padding-block: variables.$spacing-1;
     font-size: variables.$font-size-small;
-    font-weight: variables.$font-weight-regular;
+    font-weight: variables.$font-weight-400;
     width: 100%;
 }
 
@@ -88,7 +88,7 @@
     padding-inline: variables.$spacing-4;
     padding-block: variables.$spacing-1;
     font-size: variables.$font-size-small;
-    font-weight: variables.$font-weight-regular;
+    font-weight: variables.$font-weight-400;
     width: 100%;
 }
 
@@ -108,7 +108,7 @@
 
 .form__radio--label {
     font-size: variables.$font-size-base;
-    font-weight: variables.$font-weight-regular;
+    font-weight: variables.$font-weight-400;
 }
 
 // Button Container

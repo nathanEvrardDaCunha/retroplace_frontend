@@ -6,7 +6,7 @@
 
 // Card
 .card {
-    background-color: var(--color-primary);
+    background-color: var(--color-light-neutral-90);
     border-radius: variables.$spacing-1;
     border: none;
 
@@ -36,10 +36,10 @@
     position: absolute;
     bottom: 10%;
     left: 0;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-light-neutral-70);
     border-radius: 0px variables.$spacing-1 0px 0px;
 
-    font-weight: variables.$font-weight-medium;
+    font-weight: variables.$font-weight-500;
 
     padding: variables.$spacing-0 variables.$spacing-2;
     font-size: variables.$font-size-small;
@@ -61,22 +61,22 @@
 // Title
 .card__title {
     font-size: variables.$font-size-big;
-    font-weight: variables.$font-weight-bold;
+    font-weight: variables.$font-weight-700;
     margin-bottom: variables.$spacing-1;
 }
 
 // Item
 .card__item {
     font-size: variables.$font-size-small;
-    color: var(--color-four);
-    font-weight: variables.$font-weight-regular;
+    color: var(--color-neutral-light-30);
+    font-weight: variables.$font-weight-400;
 }
 
 // Price
 .card__price {
     font-size: variables.$font-size-large;
-    color: var(--color-secondary);
-    font-weight: variables.$font-weight-bold;
+    color: var(--color-light-neutral-10);
+    font-weight: variables.$font-weight-700;
 }
 
 // Button Section

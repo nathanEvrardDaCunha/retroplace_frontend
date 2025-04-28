@@ -1,3 +1,5 @@
+// TODO: Finish the footer
+
 export function LayoutFooter() {
     return (
         <footer className="layout__footer">

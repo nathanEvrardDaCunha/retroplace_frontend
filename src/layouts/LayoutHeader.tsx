@@ -3,6 +3,7 @@
 // DESIGN: SELLER need to be able to "Disconnect", "Browse" past command, "Check" account and "Browse" the products.
 // DESIGN: ADMIN need to be able to "Disconnect", "Manage" dashboards.
 // IDEA: Have a sidebar for desktop and burger menu for mobile ?
+// TODO: Finish the Header
 
 export function LayoutHeader() {
     return (

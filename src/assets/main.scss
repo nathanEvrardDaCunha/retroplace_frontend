@@ -6,27 +6,56 @@
 // === THEME === //
 
 :root {
-    --color-primary: #{variables.$color-light-primary};
-    --color-secondary: #{variables.$color-light-secondary};
-    --color-tertiary: #{variables.$color-light-tertiary};
-    --color-four: #{variables.$color-light-four};
-    --color-accent: #{variables.$color-light-accent};
+    --color-light-neutral-90: #{variables.$color-light-neutral-90};
+    --color-light-neutral-80: #{variables.$color-light-neutral-80};
+    --color-light-neutral-70: #{variables.$color-light-neutral-70};
+    --color-light-neutral-60: #{variables.$color-light-neutral-60};
+    --color-light-neutral-50: #{variables.$color-light-neutral-50};
+    --color-light-neutral-40: #{variables.$color-light-neutral-40};
+    --color-light-neutral-30: #{variables.$color-light-neutral-30};
+    --color-light-neutral-20: #{variables.$color-light-neutral-20};
+    --color-light-neutral-10: #{variables.$color-light-neutral-10};
+
+    --color-light-accent-90: #{variables.$color-light-accent-90};
+    --color-light-accent-80: #{variables.$color-light-accent-80};
+    --color-light-accent-70: #{variables.$color-light-accent-70};
+    --color-light-accent-60: #{variables.$color-light-accent-60};
+    --color-light-accent-50: #{variables.$color-light-accent-50};
+    --color-light-accent-40: #{variables.$color-light-accent-40};
+    --color-light-accent-30: #{variables.$color-light-accent-30};
+    --color-light-accent-20: #{variables.$color-light-accent-20};
+    --color-light-accent-10: #{variables.$color-light-accent-10};
+
     color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #{variables.$color-dark-primary};
-        --color-secondary: #{variables.$color-dark-secondary};
-        --color-tertiary: #{variables.$color-dark-tertiary};
-        --color-four: #{variables.$color-dark-four};
-        --color-accent: #{variables.$color-dark-accent};
+        --color-light-neutral-90: #{variables.$color-dark-neutral-90};
+        --color-light-neutral-80: #{variables.$color-dark-neutral-80};
+        --color-light-neutral-70: #{variables.$color-dark-neutral-70};
+        --color-light-neutral-60: #{variables.$color-dark-neutral-60};
+        --color-light-neutral-50: #{variables.$color-dark-neutral-50};
+        --color-light-neutral-40: #{variables.$color-dark-neutral-40};
+        --color-light-neutral-30: #{variables.$color-dark-neutral-30};
+        --color-light-neutral-20: #{variables.$color-dark-neutral-20};
+        --color-light-neutral-10: #{variables.$color-dark-neutral-10};
+
+        --color-light-accent-90: #{variables.$color-dark-accent-90};
+        --color-light-accent-80: #{variables.$color-dark-accent-80};
+        --color-light-accent-70: #{variables.$color-dark-accent-70};
+        --color-light-accent-60: #{variables.$color-dark-accent-60};
+        --color-light-accent-50: #{variables.$color-dark-accent-50};
+        --color-light-accent-40: #{variables.$color-dark-accent-40};
+        --color-light-accent-30: #{variables.$color-dark-accent-30};
+        --color-light-accent-20: #{variables.$color-dark-accent-20};
+        --color-light-accent-10: #{variables.$color-dark-accent-10};
     }
 }
 
 body {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-light-neutral-90);
+    color: var(--color-light-neutral-10);
 
     // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: all 0.3s ease-in-out;
