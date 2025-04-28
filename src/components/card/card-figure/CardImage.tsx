@@ -4,5 +4,5 @@ interface CardImageProps {
 }
 
 export function CardImage(props: CardImageProps) {
-    return <img className="product__image" src={props.src} alt={props.alt} />;
+    return <img className="card__image" src={props.src} alt={props.alt} />;
 }

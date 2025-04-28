@@ -3,5 +3,5 @@ interface CardFigCaptionProps {
 }
 
 export function CardFigCaption(props: CardFigCaptionProps) {
-    return <figcaption className="product__caption">{props.children}</figcaption>;
+    return <figcaption className="card__caption">{props.children}</figcaption>;
 }

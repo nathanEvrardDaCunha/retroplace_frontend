@@ -3,5 +3,5 @@ interface CardTitleProps {
 }
 
 export function CardTitle(props: CardTitleProps) {
-    return <h4 className="product__title">{props.children}</h4>;
+    return <h4 className="card__title">{props.children}</h4>;
 }

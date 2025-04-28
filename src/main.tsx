@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { PageHome } from './pages/shared/PageHome';
-import { PageLogin } from './pages/shared/PageLogin';
-import { PageNotFound } from './pages/shared/PageNotFound';
-import { PageBrowseProduct } from './pages/shared/PageBrowseProducts';
-import { PageRegister } from './pages/shared/PageRegister';
+import { PageBrowseProduct } from './pages/PageBrowseProducts';
+import { PageHome } from './pages/PageHome';
+import { PageLogin } from './pages/PageLogin';
+import { PageNotFound } from './pages/PageNotFound';
+import { PageRegister } from './pages/PageRegister';
 
 // TODO: Add css cursor property for every thing that are interactive.
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...

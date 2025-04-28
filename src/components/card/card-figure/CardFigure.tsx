@@ -3,5 +3,5 @@ interface CardFigureProps {
 }
 
 export function CardFigure(props: CardFigureProps) {
-    return <figure className="product__figure">{props.children}</figure>;
+    return <figure className="card__figure">{props.children}</figure>;
 }

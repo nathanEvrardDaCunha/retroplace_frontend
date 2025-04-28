@@ -29,7 +29,7 @@ export function LoginUser() {
     return (
         <>
             <main className="main-login">
-                <h1 className="main-login__title">Browse available products</h1>
+                <h1 className="main-login__title">Authenticate User Account</h1>
 
                 <section className="main-login__content">
                     <Form action={handleAction}>

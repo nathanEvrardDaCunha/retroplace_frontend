@@ -11,12 +11,14 @@ $font-main: 'Geist', sans-serif;
 // TODO: Pass from "primary", "secondary"... to "10", "20", "30".
 // TODO: Pass from "hsl" value to "hsla"
 
+// Light Mode
 $color-light-primary: hsl(0, 0%, 90%);
 $color-light-secondary: hsl(0, 0%, 10%);
 $color-light-tertiary: hsl(0, 0%, 80%);
 $color-light-four: hsl(0, 0%, 20%);
 $color-light-accent: hsl(30, 100%, 40%);
 
+// Dark Mode
 $color-dark-primary: hsl(0, 0%, 10%);
 $color-dark-secondary: hsl(0, 0%, 90%);
 $color-dark-tertiary: hsl(0, 0%, 20%);
@@ -58,6 +60,14 @@ $spacing-4: 20px;
 $spacing-5: 24px;
 $spacing-6: 32px;
 $spacing-7: 48px;
+
+// === BORDER === //
+
+// - border-radius ; border ; shadow-box...
+
+// === ANIMATION === //
+
+// - time-duration ; ease-in-out ; all...
 
 // TODO: Refine the shadow box for dark and light and make it a variable.
 // => box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);

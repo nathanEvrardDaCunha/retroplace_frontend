@@ -7,7 +7,7 @@ export function NotFound() {
     return (
         <>
             <main className="main-notfound">
-                <h1 className="main-notfound__title">Home presentation page</h1>
+                <h1 className="main-notfound__title">404 page</h1>
 
                 <section className="main-notfound__content">
                     <p>Content</p>

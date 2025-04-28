@@ -5,8 +5,8 @@ interface CardSectionProps {
 
 export function CardSection(props: CardSectionProps) {
     if (props.variant === 'characteristics') {
-        return <section className="product__characteristics">{props.children}</section>;
+        return <section className="card__characteristics">{props.children}</section>;
     }
 
-    return <section className="product__buttons">{props.children}</section>;
+    return <section className="card__buttons">{props.children}</section>;
 }
