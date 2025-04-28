@@ -1,0 +1,22 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === CLASSES === //
+
+// Main
+.main-notfound {
+    min-height: 100vh;
+    width: 100%;
+    padding-block: variables.$spacing-6;
+    padding-inline: variables.$spacing-6;
+}
+
+// Title
+.main-notfound__title {
+    padding-block-end: variables.$spacing-6;
+}
+
+// Content
+.main-notfound__content {
+}

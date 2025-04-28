@@ -8,6 +8,17 @@ import { FormLabel } from '../../components/form/form-other/FormLabel';
 import { FormSection } from '../../components/form/form-other/FormSection';
 import { Button } from '../../components/shared/Button';
 
+import './login-style.scss';
+
+// TODO: When form is a success, redirect to personal-account page.
+// TODO: When form is a success, tell it to the user through a message.
+// TODO: Add reset button.
+// TODO: Add sign-up button.
+// TODO: Should indicate to user which fields are required before he submit for the first time.
+// IDEA: Rename FeatureUserCreation ?
+// TODO: When Backend implemented,  don't forget to implement an authentication system.
+// TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
+
 export function LoginUser() {
     function handleAction(formData: FormData) {
         // Prevent event default
@@ -15,40 +26,39 @@ export function LoginUser() {
         console.log('Hello Form !');
     }
 
-    // TODO: When form is a success, redirect to personal-account page.
-    // TODO: When form is a success, tell it to the user through a message.
     return (
-        <main className="main-login">
-            <section className="container-fluid">
-                <Form action={handleAction}>
-                    <FormFieldset>
-                        <FormLegend>Login</FormLegend>
+        <>
+            <main className="main-login">
+                <h1 className="main-login__title">Browse available products</h1>
 
-                        <FormSection variant="field">
-                            <FormLabel variant="label" htmlFor={'email-account'}>
-                                Email
-                            </FormLabel>
-                            <FormDescription variant="description">Write down your email address.</FormDescription>
-                            <FormInputEmail id={'email-account'} name={'email-account'} />
-                        </FormSection>
+                <section className="main-login__content">
+                    <Form action={handleAction}>
+                        <FormFieldset>
+                            <FormLegend>Login</FormLegend>
 
-                        <FormSection variant="field">
-                            <FormLabel variant="label" htmlFor={'password-account'}>
-                                Password
-                            </FormLabel>
-                            <FormDescription variant="description">Write down your password.</FormDescription>
-                            <FormInputPassword id={'password-account'} name={'password-account'} />
-                        </FormSection>
+                            <FormSection variant="field">
+                                <FormLabel variant="label" htmlFor={'email-account'}>
+                                    Email
+                                </FormLabel>
+                                <FormDescription variant="description">Write down your email address.</FormDescription>
+                                <FormInputEmail id={'email-account'} name={'email-account'} />
+                            </FormSection>
 
-                        <FormSection variant="button">
-                            <Button>Submit</Button>
+                            <FormSection variant="field">
+                                <FormLabel variant="label" htmlFor={'password-account'}>
+                                    Password
+                                </FormLabel>
+                                <FormDescription variant="description">Write down your password.</FormDescription>
+                                <FormInputPassword id={'password-account'} name={'password-account'} />
+                            </FormSection>
 
-                            {/* <Button>Sign Up</Button> */}
-                            {/* <Button>Reset Password</Button> */}
-                        </FormSection>
-                    </FormFieldset>
-                </Form>
-            </section>
-        </main>
+                            <FormSection variant="button">
+                                <Button>Submit</Button>
+                            </FormSection>
+                        </FormFieldset>
+                    </Form>
+                </section>
+            </main>
+        </>
     );
 }

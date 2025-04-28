@@ -1,0 +1,114 @@
+// // === EXTERNAL === //
+
+// @use '../../assets/variables';
+
+// // === CLASSES === //
+
+// // Form
+// // TODO: It should be the oen saying max-width: Yps;
+// .form {
+//     // padding-inline: variables.$spacing-6;
+//     // background-color: var(--color-primary);
+//     // border-radius: variables.$spacing-1;
+//     // border: none;
+//     // padding: 1rem;
+// }
+
+// // Fieldset
+// .form__fieldset {
+//     display: flex;
+//     flex-direction: column;
+//     gap: variables.$spacing-6;
+
+//     padding: variables.$spacing-3;
+//     border-radius: variables.$spacing-1;
+//     border: none;
+//     background-color: var(--color-primary);
+//     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
+// }
+
+// .form__legend {
+//     background-color: var(--color-primary);
+//     border-radius: variables.$spacing-1;
+//     border: none;
+//     padding: 1rem;
+//     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
+
+//     font-size: variables.$font-size-bigger;
+//     font-weight: variables.$font-weight-black;
+//     color: var(--color-secondary);
+//     margin-block-end: variables.$spacing-3;
+//     width: 100%;
+//     text-align: center;
+// }
+
+// .form__label {
+//     font-size: variables.$font-size-large;
+//     font-weight: variables.$font-weight-bold;
+//     color: var(--color-secondary);
+//     margin-block-end: variables.$spacing-0;
+//     width: 100%;
+// }
+
+// .form__description {
+//     font-size: variables.$font-size-base;
+//     font-weight: variables.$font-weight-regular;
+//     color: var(--color-four);
+//     margin-block-end: variables.$spacing-0;
+//     width: 100%;
+// }
+
+// .form__field {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+// }
+
+// .form__input--text {
+//     padding-inline: variables.$spacing-4;
+//     padding-block: variables.$spacing-1;
+//     font-size: variables.$font-size-small;
+//     font-weight: variables.$font-weight-regular;
+//     width: 100%;
+// }
+
+// .form__input--email {
+//     padding-inline: variables.$spacing-4;
+//     padding-block: variables.$spacing-1;
+//     font-size: variables.$font-size-small;
+//     font-weight: variables.$font-weight-regular;
+//     width: 100%;
+// }
+
+// .form__input--password {
+//     padding-inline: variables.$spacing-4;
+//     padding-block: variables.$spacing-1;
+//     font-size: variables.$font-size-small;
+//     font-weight: variables.$font-weight-regular;
+//     width: 100%;
+// }
+
+// .form__radio--group {
+//     margin-block-end: 0;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     gap: variables.$spacing-1;
+// }
+
+// .form__input--radio {
+//     margin-inline-start: variables.$spacing-4;
+//     margin-block: variables.$spacing-1;
+// }
+
+// .form__radio--label {
+//     font-size: variables.$font-size-base;
+//     font-weight: variables.$font-weight-regular;
+// }
+
+// .form__buttons {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+// }

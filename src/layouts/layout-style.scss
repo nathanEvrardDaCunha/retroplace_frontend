@@ -5,7 +5,7 @@
 // === CLASSES === //
 
 // Layout
-.layout-grid {
+.layout {
     display: grid;
     grid-template-areas:
         'header header header'
@@ -14,13 +14,15 @@
 }
 
 // Header
-.layout-header {
+.layout__header {
     grid-area: header;
 }
 
 // Content
-.layout-content {
+.layout__content {
     grid-area: container;
+
+    background-color: var(--color-tertiary);
 }
 
 // .layout-content--fluid {
@@ -28,6 +30,6 @@
 // }
 
 // Footer
-.layout-footer {
+.layout__footer {
     grid-area: footer;
 }

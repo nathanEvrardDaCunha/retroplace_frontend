@@ -3,5 +3,5 @@ interface LayoutContentProps {
 }
 
 export function LayoutContent(props: LayoutContentProps) {
-    return <div className="layout-content">{props.children}</div>;
+    return <div className="layout__content">{props.children}</div>;
 }

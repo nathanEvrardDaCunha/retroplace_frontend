@@ -1,0 +1,27 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === CLASSES === //
+
+// Main
+.main-products {
+    min-height: 100vh;
+    width: 100%;
+    padding-block: variables.$spacing-6;
+    padding-inline: variables.$spacing-6;
+}
+
+// Title
+.main-products__title {
+    padding-block-end: variables.$spacing-6;
+}
+
+// Content
+// DESIGN: (320px - 32px * 2) = 256px.
+.main-products__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 256px);
+    justify-content: center;
+    gap: variables.$spacing-6;
+}

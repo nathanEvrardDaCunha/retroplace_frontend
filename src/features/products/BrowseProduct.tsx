@@ -7,40 +7,34 @@ import { CardFigure } from '../../components/card/card-figure/CardFigure';
 import { CardImage } from '../../components/card/card-figure/CardImage';
 import { Button } from '../../components/shared/Button';
 
-// TODO: Implement procedural card generation logic but with fake data through data structure.
+import './browse-products-style.scss';
 
+// TODO: Implement procedural card generation logic but with fake data through data structure.
 // IDEA: Separate into individual file "BrowseProduct", "FilterProduct" and "SortProduct".
-// => Then merge them together, maybe in "ProductPage" ?
+// TODO: Implement one section to filter available product.
+// TODO: Implement one section to sort available product.
+// IDEA: See to add a 0/5 rating information about the seller now or later.
+// TODO: Make the product button Return to the product page.
+// IDEA: Allow users to report, on the detailed page, the product if it infringe our policy.
+// TODO: Implement formatter for the "" or ''
 
 export function BrowseProduct() {
-    // IDEA: Use "main" instead
     return (
-        <main className="main">
-            {/* // DESIGN: One section to filter the products.
-        // => Console System, Type of Product (Video Game, Figurines, Consoles, Limited Edition Stuff...)... */}
+        <>
+            {/* <aside>
+                <section className="filter">
+                    <h2>Filter available products</h2>
+                </section>
 
-            <section className="filter">
-                <h2>Filter available products</h2>
-            </section>
+                <section className="sort">
+                    <h2>Sort available products</h2>
+                </section>
+            </aside> */}
 
-            {/* // DESIGN: One section to sort the products.
-        // => By Age, By Used Quality, By Price... */}
-            <section className="sort">
-                <h2>Sort available products</h2>
-            </section>
+            <main className="main-products">
+                <h1 className="main-products__title">Browse available products</h1>
 
-            {/* // DESIGN: One section to browse the remaining product. */}
-            {/* IDEA: See to add a 0/5 rating information about the seller now or later. */}
-            {/* TODO: Make the product button Return to the product page */}
-
-            {/* IDEA: Allow users to report, on the detailed page, the product if it infringe our policy */}
-            {/* TODO: Implement formatter for the "" or '' */}
-
-            {/* TODO: Finish to style the button and make TSX Card components. */}
-            <section className="browse">
-                <h2 className="browse__title">Browse available products</h2>
-
-                <section className="browse__products">
+                <section className="main-products__content">
                     <Card>
                         <CardFigure>
                             <CardImage src={'https://picsum.photos/499'} alt={'lorem picsum'} />
@@ -131,7 +125,7 @@ export function BrowseProduct() {
                         </CardSection>
                     </Card>
                 </section>
-            </section>
-        </main>
+            </main>
+        </>
     );
 }
