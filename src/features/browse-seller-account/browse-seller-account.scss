@@ -1,0 +1,32 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === CLASSES === //
+
+// IDEA: Regroup the "main" and "title" into one shared file across every features.
+// Because right now, they are the same just like the "Shotgun Code Smell".
+
+// Main
+.main-browse-seller {
+    min-height: 100vh;
+    width: 100%;
+    padding-block: variables.$spacing-6;
+    padding-inline: variables.$spacing-6;
+
+    display: flex;
+    flex-direction: column;
+}
+
+// Title
+.main-browse-seller__title {
+    padding-block-end: variables.$spacing-6;
+}
+
+// Content
+.main-browse-seller__content {
+    margin: auto;
+    min-width: 256px;
+    width: 100%;
+    max-width: 550px;
+}
