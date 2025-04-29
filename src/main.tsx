@@ -6,6 +6,7 @@ import { PageHome } from './pages/PageHome';
 import { PageLogin } from './pages/PageLogin';
 import { PageNotFound } from './pages/PageNotFound';
 import { PageRegister } from './pages/PageRegister';
+import { PageResetPassword } from './pages/PageResetPassword';
 
 // TODO: Add css cursor property for every thing that are interactive.
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     { path: '/login', element: <PageLogin /> },
     { path: '/register', element: <PageRegister /> },
     { path: '/products', element: <PageBrowseProduct /> },
+    { path: '/reset-password', element: <PageResetPassword /> },
     { path: '/*', element: <PageNotFound /> },
 ]);
 
