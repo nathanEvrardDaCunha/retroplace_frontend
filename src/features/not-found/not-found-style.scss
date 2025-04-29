@@ -13,6 +13,9 @@
     width: 100%;
     padding-block: variables.$spacing-6;
     padding-inline: variables.$spacing-6;
+
+    display: flex;
+    flex-direction: column;
 }
 
 // Title
@@ -22,4 +25,8 @@
 
 // Content
 .main-notfound__content {
+    margin: auto;
+    min-width: 256px;
+    width: 100%;
+    max-width: 550px;
 }

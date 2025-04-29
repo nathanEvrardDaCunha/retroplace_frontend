@@ -9,12 +9,9 @@ import { Button } from '../../components/shared/Button';
 
 import './reset-password-style.scss';
 
-// TODO: When form is a success, redirect to personal-account page.
+// When form is success, tell user to check his personal email address inbox.
 // TODO: When form is a success, tell it to the user through a message.
-// TODO: Add reset button.
-// TODO: Add sign-up button.
 // TODO: Should indicate to user which fields are required before he submit for the first time.
-// IDEA: Rename FeatureUserCreation ?
 // TODO: When Backend implemented,  don't forget to implement an authentication system.
 // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
 
