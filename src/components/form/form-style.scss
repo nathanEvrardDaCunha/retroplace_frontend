@@ -53,9 +53,9 @@
 
 // Description
 .form__description {
-    font-size: variables.$font-size-base;
+    font-size: variables.$font-size-small;
     font-weight: variables.$font-weight-400;
-    color: var(--color-light-neutral-10);
+    color: var(--color-light-neutral-30);
     margin-block-end: variables.$spacing-0;
     width: 100%;
 }

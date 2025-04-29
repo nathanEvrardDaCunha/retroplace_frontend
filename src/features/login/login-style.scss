@@ -4,12 +4,18 @@
 
 // === CLASSES === //
 
+// IDEA: Regroup the "main" and "title" into one shared file across every features.
+// Because right now, they are the same just like the "Shotgun Code Smell".
+
 // Main
 .main-login {
     min-height: 100vh;
     width: 100%;
     padding-block: variables.$spacing-6;
     padding-inline: variables.$spacing-6;
+
+    display: flex;
+    flex-direction: column;
 }
 
 // Title
@@ -19,4 +25,5 @@
 
 // Content
 .main-login__content {
+    margin-block: auto;
 }

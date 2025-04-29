@@ -28,7 +28,7 @@ export function RegisterUser() {
     return (
         <>
             <main className="main-register">
-                <h1 className="main-register__title">Create User Account</h1>
+                {/* <h1 className="main-register__title">Create User Account</h1> */}
 
                 <section className="main-register__content">
                     <Form action={handleAction}>

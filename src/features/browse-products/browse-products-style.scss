@@ -4,6 +4,9 @@
 
 // === CLASSES === //
 
+// IDEA: Regroup the "main" and "title" into one shared file across every features.
+// Because right now, they are the same just like the "Shotgun Code Smell".
+
 // Main
 .main-products {
     min-height: 100vh;
@@ -14,7 +17,18 @@
 
 // Title
 .main-products__title {
-    padding-block-end: variables.$spacing-6;
+    background-color: var(--color-light-neutral-90);
+    border-radius: variables.$spacing-1;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
+
+    font-size: variables.$font-size-bigger;
+    font-weight: variables.$font-weight-900;
+    color: var(--color-light-neutral-10);
+    margin-block-end: variables.$spacing-6;
+    width: 100%;
+    text-align: center;
 }
 
 // Content
