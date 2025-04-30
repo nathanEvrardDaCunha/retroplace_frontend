@@ -8,12 +8,25 @@ import { PageNotFound } from './pages/PageNotFound';
 import { PageRegister } from './pages/PageRegister';
 import { PageResetPassword } from './pages/PageResetPassword';
 import { PageSellerAccount } from './pages/PageSellerAccount';
+import { PageAccountModification } from './pages/PageAccountModification';
 
 // TODO: Add css cursor property for every thing that are interactive.
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
 
 // TODO: Implement authentication for theses routes:
 // - account <PageSellerAccount />
+// - account-modification <PageAccountModification />
+
+// TODO: Add theses following routes/pages:
+// - About us
+// - Contacts us
+
+// - Terms
+// - Privacy
+// - Policy & Safety
+
+// - Price
+// - Services
 
 const router = createBrowserRouter([
     { path: '/', element: <PageHome /> },
@@ -22,6 +35,8 @@ const router = createBrowserRouter([
     { path: '/products', element: <PageBrowseProduct /> },
     { path: '/reset-password', element: <PageResetPassword /> },
     { path: '/account/:id', element: <PageSellerAccount /> },
+    { path: '/account/:id', element: <PageSellerAccount /> },
+    { path: '/account-modification/:id', element: <PageAccountModification /> },
     { path: '/*', element: <PageNotFound /> },
 ]);
 
