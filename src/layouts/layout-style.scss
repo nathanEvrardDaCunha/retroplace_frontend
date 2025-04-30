@@ -21,6 +21,7 @@
 // Content
 .layout__content {
     grid-area: container;
+    min-height: 100vh;
 
     background-color: var(--color-light-neutral-80);
 }

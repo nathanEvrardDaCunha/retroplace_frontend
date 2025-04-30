@@ -1,14 +1,14 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { PageBrowseProduct } from './pages/PageBrowseProducts';
-import { PageHome } from './pages/PageHome';
-import { PageLogin } from './pages/PageLogin';
-import { PageNotFound } from './pages/PageNotFound';
-import { PageRegister } from './pages/PageRegister';
-import { PageResetPassword } from './pages/PageResetPassword';
-import { PageSellerAccount } from './pages/PageSellerAccount';
-import { PageAccountModification } from './pages/PageAccountModification';
+import { AccountModificationPage } from './pages/loggers/account-modification/AccountModificationPage';
+import { HomePage } from './pages/visitors/home/HomePage';
+import { LoginPage } from './pages/visitors/login/LoginPage';
+import { NotFoundPage } from './pages/visitors/not-found/NotFoundPage';
+import { ProductsPage } from './pages/visitors/products/ProductsPage';
+import { RegisterPage } from './pages/visitors/register/RegisterPage';
+import { ResetPasswordPage } from './pages/visitors/reset-password/ResetPasswordPage';
+import { AccountPage } from './pages/loggers/account/AccountPage';
 
 // TODO: Add css cursor property for every thing that are interactive.
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
@@ -29,18 +29,17 @@ import { PageAccountModification } from './pages/PageAccountModification';
 // - Services
 
 const router = createBrowserRouter([
-    { path: '/', element: <PageHome /> },
-    { path: '/login', element: <PageLogin /> },
-    { path: '/register', element: <PageRegister /> },
-    { path: '/products', element: <PageBrowseProduct /> },
-    { path: '/reset-password', element: <PageResetPassword /> },
-    { path: '/account/:id', element: <PageSellerAccount /> },
-    { path: '/account/:id', element: <PageSellerAccount /> },
-    { path: '/account-modification/:id', element: <PageAccountModification /> },
-    { path: '/*', element: <PageNotFound /> },
+    { path: '/', element: <HomePage /> },
+    { path: '/login', element: <LoginPage /> },
+    { path: '/register', element: <RegisterPage /> },
+    { path: '/products', element: <ProductsPage /> },
+    { path: '/reset-password', element: <ResetPasswordPage /> },
+    { path: '/account/:id', element: <AccountPage /> },
+    { path: '/account-modification/:id', element: <AccountModificationPage /> },
+    { path: '/*', element: <NotFoundPage /> },
 ]);
 
-// IDEA: Maybe add Vitest to do Unit and Integration Test for when the project will become more feature rich.
+// IDEA: Maybe add Vitest to ;do Unit and Integration Test for when the project will become more feature rich.
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
