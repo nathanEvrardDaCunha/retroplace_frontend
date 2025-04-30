@@ -2,10 +2,9 @@ import { Card } from '../../components/card/Card';
 import { CardItem } from '../../components/card/card-other/CardItem';
 import { CardSection } from '../../components/card/card-other/CardSection';
 import { CardTitle } from '../../components/card/card-other/CardTitle';
-import { Button } from '../../components/shared/Button';
+import { CustomLink } from '../../components/shared/CustomLink';
 import './not-found-style.scss';
 
-// TODO: Add a link that return to the previous page or home page.
 // TODO: Create a TSX ErrorMessage component with proper feature to display error ?
 // => Instead of using <Card>, it might be better to create a <Message> component for those cases.
 
@@ -24,11 +23,13 @@ export function NotFound() {
                             </CardItem>
                             <CardItem variant="item">Did you check you were on the good URL ? </CardItem>
 
-                            <CardItem variant="item">If you're unsure, we invite you to the home page.</CardItem>
+                            <CardItem variant="item">If you're unsure, we invite you to click the link below.</CardItem>
                         </CardSection>
 
                         <CardSection variant="buttons">
-                            <Button>Go Home</Button>
+                            <CustomLink variant="no-padding" to={'/'}>
+                                Go back to Home
+                            </CustomLink>
                         </CardSection>
                     </Card>
                 </section>

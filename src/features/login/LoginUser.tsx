@@ -7,13 +7,12 @@ import { FormDescription } from '../../components/form/form-other/FormDescriptio
 import { FormLabel } from '../../components/form/form-other/FormLabel';
 import { FormSection } from '../../components/form/form-other/FormSection';
 import { Button } from '../../components/shared/Button';
+import { CustomLink } from '../../components/shared/CustomLink';
 
 import './login-style.scss';
 
 // TODO: When form is a success, redirect to personal-account page.
 // TODO: When form is a success, tell it to the user through a message.
-// TODO: Add reset button.
-// TODO: Add sign-up button.
 // TODO: Should indicate to user which fields are required before he submit for the first time.
 // IDEA: Rename FeatureUserCreation ?
 // TODO: When Backend implemented,  don't forget to implement an authentication system.
@@ -50,10 +49,17 @@ export function LoginUser() {
                                 </FormLabel>
                                 <FormDescription variant="description">Write down your password.</FormDescription>
                                 <FormInputPassword id={'password-account'} name={'password-account'} />
+                                <CustomLink variant="top-padding" to={'/reset-password'}>
+                                    Reset Password
+                                </CustomLink>
                             </FormSection>
 
                             <FormSection variant="button">
                                 <Button>Submit</Button>
+
+                                <CustomLink variant="no-padding" to={'/reset-password'}>
+                                    Create Account
+                                </CustomLink>
                             </FormSection>
                         </FormFieldset>
                     </Form>

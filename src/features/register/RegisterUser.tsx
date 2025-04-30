@@ -9,6 +9,7 @@ import { FormDescription } from '../../components/form/form-other/FormDescriptio
 import { FormLabel } from '../../components/form/form-other/FormLabel';
 import { FormSection } from '../../components/form/form-other/FormSection';
 import { Button } from '../../components/shared/Button';
+import { CustomLink } from '../../components/shared/CustomLink';
 
 import './register-style.scss';
 
@@ -86,6 +87,10 @@ export function RegisterUser() {
 
                             <FormSection variant="button">
                                 <Button>Submit</Button>
+
+                                <CustomLink variant="no-padding" to={'/login'}>
+                                    Login Instead
+                                </CustomLink>
                             </FormSection>
                         </FormFieldset>
                     </Form>

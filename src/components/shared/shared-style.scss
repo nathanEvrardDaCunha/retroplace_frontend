@@ -30,3 +30,45 @@
         transform: scale(0.95);
     }
 }
+
+.shared-link {
+    transition: all 0.1s ease-in-out;
+
+    width: fit-content;
+    color: var(--color-light-accent-30);
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-400;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.shared-link--top-padding {
+    transition: all 0.1s ease-in-out;
+
+    width: fit-content;
+    color: var(--color-light-accent-30);
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-400;
+    text-decoration: underline;
+
+    padding-block-start: variables.$spacing-1;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
