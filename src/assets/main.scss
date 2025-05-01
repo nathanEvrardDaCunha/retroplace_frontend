@@ -3,7 +3,7 @@
 @use 'variables';
 @use 'reset';
 
-// === THEME === //
+// === DEFAULT-THEME === //
 
 :root {
     --color-light-neutral-90: #{variables.$color-light-neutral-90};
@@ -29,6 +29,8 @@
     color-scheme: light dark;
 }
 
+// === DARK-THEME === //
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color-light-neutral-90: #{variables.$color-dark-neutral-90};
@@ -53,10 +55,10 @@
     }
 }
 
+// === THEME-IMPLEMENTATION === //
+
 body {
     background-color: var(--color-light-neutral-90);
     color: var(--color-light-neutral-10);
-
-    // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: variables.$transition-base;
 }

@@ -7,7 +7,6 @@ export function ResetPasswordLogic() {
 
     // TODO: When form is a success, redirect to login page.
     // TODO: When form is a success, tell it to the user through a message.
-    // TODO: Should indicate to user which fields are required before he submit for the first time.
     // TODO: When Backend implemented,  don't forget to implement an authentication system.
     // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
 

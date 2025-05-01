@@ -8,7 +8,6 @@ export function HomePage() {
         <Layout>
             <LayoutHeader />
             <LayoutContent>
-                {/* <Home /> */}
                 <h1> Home Page </h1>
             </LayoutContent>
             <LayoutFooter />

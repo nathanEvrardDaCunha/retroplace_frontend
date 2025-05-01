@@ -5,9 +5,6 @@ export function DeleteAccountLogic() {
         }
     }
 
-    // TODO: Make the warning message style destructive
-    // TODO: Make the warning button style destructive
-
     return (
         <>
             <form action={handleActionDeleteAccount}>

@@ -6,12 +6,7 @@ export function BrowseAccountLogic() {
     console.log(params.id);
 
     // TODO: Add a link that return to the previous page or home page.
-    // TODO: Create a TSX ErrorMessage component with proper feature to display error ?
-    // => Instead of using <Card>, it might be better to create a <Message> component for those cases.
-    // => Or either redo the <Card> to be more modular, or, create another type of it specific for this case.
-    // DESIGN: The admin should not be able to delete neither update is account for security reason.
-    // => Only others, higher admins, can do so.
-    // IDEA: Add a second verification to "delete account" to make sure it's not a missed click.
+    // DESIGN: Admin shouldn't be allowed to update and delete their colleagues.
     // IDEA: Add Icon for each category.
 
     return (

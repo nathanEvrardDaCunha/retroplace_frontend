@@ -1,14 +1,5 @@
 export function BrowseProductLogic() {
     // TODO: Implement procedural card generation logic but with fake data through data structure.
-    // IDEA: Separate into individual file "BrowseProduct", "FilterProduct" and "SortProduct".
-    // TODO: Implement one section to filter available product.
-    // TODO: Implement one section to sort available product.
-    // IDEA: See to add a 0/5 rating information about the seller now or later.
-    // TODO: Make the product button Return to the product page.
-    // IDEA: Allow users to report, on the detailed page, the product if it infringe our policy.
-    // TODO: Implement formatter for the "" or ''
-    // TODO: Add Filter features in another file
-    // TODO: Add Sort features in another file
 
     return (
         <>
@@ -23,9 +14,11 @@ export function BrowseProductLogic() {
                     <p>Price: 499.99€</p>
                     <p>Release Date: 11/12/2020</p>
                     <p>Condition: Brand New</p>
+                    <p>Seller: ⭐⭐⭐★★</p>
                 </section>
 
                 <section>
+                    <button>Report Product</button>
                     <button>See More</button>
                 </section>
             </article>
@@ -41,9 +34,11 @@ export function BrowseProductLogic() {
                     <p>Price: 399.99€</p>
                     <p>Release Date: 10/11/2020</p>
                     <p>Condition: Used</p>
+                    <p>Seller: ⭐⭐⭐⭐⭐</p>
                 </section>
 
                 <section>
+                    <button>Report Product</button>
                     <button>See More</button>
                 </section>
             </article>
@@ -59,9 +54,11 @@ export function BrowseProductLogic() {
                     <p>Price: 299.99€</p>
                     <p>Release Date: 03/03/2017</p>
                     <p>Condition: Refurbished</p>
+                    <p>Seller: ⭐★★★★</p>
                 </section>
 
                 <section>
+                    <button>Report Product</button>
                     <button>See More</button>
                 </section>
             </article>
@@ -77,9 +74,11 @@ export function BrowseProductLogic() {
                     <p>Price: 549.99€</p>
                     <p>Release Date: 02/25/2022</p>
                     <p>Condition: Lightly Used</p>
+                    <p>Seller: ⭐⭐★★★</p>
                 </section>
 
                 <section>
+                    <button>Report Product</button>
                     <button>See More</button>
                 </section>
             </article>
@@ -95,9 +94,11 @@ export function BrowseProductLogic() {
                     <p>Price: 349.99€</p>
                     <p>Release Date: 10/13/2020</p>
                     <p>Condition: Brand New</p>
+                    <p>Seller: ⭐⭐⭐⭐★</p>
                 </section>
 
                 <section>
+                    <button>Report Product</button>
                     <button>See More</button>
                 </section>
             </article>

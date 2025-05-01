@@ -2,9 +2,8 @@
 
 @use '../assets/variables';
 
-// === CLASSES === //
+// === OVERALL-LAYOUT === //
 
-// Layout
 .layout {
     display: grid;
     grid-template-areas:
@@ -13,12 +12,14 @@
         'footer footer footer';
 }
 
-// Header
+// === HEADER === //
+
 .layout__header {
     grid-area: header;
 }
 
-// Content
+// === CONTENT === //
+
 .layout__content {
     grid-area: container;
     min-height: 100vh;
@@ -26,7 +27,75 @@
     background-color: var(--color-light-neutral-80);
 }
 
-// Footer
+// === MAIN === //
+
+.layout__main--minimalist {
+    margin-block: auto;
+}
+
+.layout__main--base {
+    margin-block: auto;
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-6;
+}
+
+.layout__main--fluid {
+    margin: auto;
+    min-width: 256px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.layout__main--gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 256px);
+    justify-content: center;
+    gap: variables.$spacing-6;
+}
+
+// === MAIN-CONTENT === //
+
+.layout__main--content-base {
+    min-height: 100vh;
+    width: 100%;
+    padding-block: variables.$spacing-6;
+    padding-inline: variables.$spacing-6;
+}
+
+.layout__main--content-1 {
+    min-height: 100vh;
+    width: 100%;
+    padding-block: variables.$spacing-6;
+    padding-inline: variables.$spacing-6;
+
+    display: flex;
+    flex-direction: column;
+}
+
+// === PAGE-TITLE === //
+
+.layout__title--base {
+    padding-block-end: variables.$spacing-6;
+}
+
+.layout__title--important {
+    background-color: var(--color-light-neutral-90);
+    border-radius: variables.$spacing-1;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
+
+    font-size: variables.$font-size-bigger;
+    font-weight: variables.$font-weight-900;
+    color: var(--color-light-neutral-10);
+    margin-block-end: variables.$spacing-6;
+    width: 100%;
+    text-align: center;
+}
+
+// === FOOTER === //
+
 .layout__footer {
     grid-area: footer;
 }

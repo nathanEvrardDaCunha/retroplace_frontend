@@ -9,7 +9,6 @@ export function RegisterPage() {
         <Layout>
             <LayoutHeader />
             <LayoutContent>
-                {/* <RegisterUser /> <h1> Register Page </h1> */}
                 <RegisterLogic />
             </LayoutContent>
             <LayoutFooter />

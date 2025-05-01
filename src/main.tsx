@@ -10,21 +10,18 @@ import { RegisterPage } from './pages/visitors/register/RegisterPage';
 import { ResetPasswordPage } from './pages/visitors/reset-password/ResetPasswordPage';
 import { AccountPage } from './pages/loggers/account/AccountPage';
 
-// TODO: Add css cursor property for every thing that are interactive.
 // TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
 
 // TODO: Implement authentication for theses routes:
-// - account <PageSellerAccount />
-// - account-modification <PageAccountModification />
+// - account/:id
+// - account-modification/:id
 
 // TODO: Add theses following routes/pages:
 // - About us
 // - Contacts us
-
 // - Terms
 // - Privacy
 // - Policy & Safety
-
 // - Price
 // - Services
 
@@ -39,7 +36,7 @@ const router = createBrowserRouter([
     { path: '/*', element: <NotFoundPage /> },
 ]);
 
-// IDEA: Maybe add Vitest to ;do Unit and Integration Test for when the project will become more feature rich.
+// IDEA: Maybe add Vitest to for Unit and Integration Test.
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>

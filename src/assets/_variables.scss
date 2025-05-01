@@ -2,13 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
-// === FONTS === //
+// === FONTS-FAMILY === //
 
 $font-geist: 'Geist', sans-serif;
 
 // === COLORS === //
 
-// Light Mode
+// Light Mode Black/White
 $color-light-neutral-90: hsla(0, 0%, 90%, 100%);
 $color-light-neutral-80: hsla(0, 0%, 80%, 100%);
 $color-light-neutral-70: hsla(0, 0%, 70%, 100%);
@@ -19,6 +19,7 @@ $color-light-neutral-30: hsla(0, 0%, 30%, 100%);
 $color-light-neutral-20: hsla(0, 0%, 20%, 100%);
 $color-light-neutral-10: hsla(0, 0%, 10%, 100%);
 
+// Light Mode Accent
 $color-light-accent-90: hsla(225, 100%, 90%, 100%);
 $color-light-accent-80: hsla(225, 100%, 80%, 100%);
 $color-light-accent-70: hsla(225, 100%, 70%, 100%);
@@ -29,7 +30,7 @@ $color-light-accent-30: hsla(225, 100%, 30%, 100%);
 $color-light-accent-20: hsla(225, 100%, 20%, 100%);
 $color-light-accent-10: hsla(225, 100%, 10%, 100%);
 
-// Dark Mode
+// Dark Mode Black/White
 $color-dark-neutral-90: hsla(0, 0%, 10%, 100%);
 $color-dark-neutral-80: hsla(0, 0%, 20%, 100%);
 $color-dark-neutral-70: hsla(0, 0%, 30%, 100%);
@@ -40,6 +41,7 @@ $color-dark-neutral-30: hsla(0, 0%, 70%, 100%);
 $color-dark-neutral-20: hsla(0, 0%, 80%, 100%);
 $color-dark-neutral-10: hsla(0, 0%, 90%, 100%);
 
+// Dark Mode Accent
 $color-dark-accent-90: hsla(30, 100%, 10%, 100%);
 $color-dark-accent-80: hsla(30, 100%, 20%, 100%);
 $color-dark-accent-70: hsla(30, 100%, 30%, 100%);
@@ -82,6 +84,7 @@ $font-weight-900: 900;
 
 // === SPACING === //
 
+// IDEA: Maybe rename to "spacing-small" or "spacing-sm"
 $spacing-0: 4px;
 $spacing-1: 8px;
 $spacing-2: 12px;
@@ -93,11 +96,14 @@ $spacing-7: 48px;
 
 // === BORDER === //
 
-// - border-radius ; border ; shadow-box...
+$border-radius-0: 4px;
+$border-radius-1: 8px;
+$border-radius-2: 16px;
 
 // === ANIMATION === //
 
-// - time-duration ; ease-in-out ; all...
+$transition-base: all 0.3s ease-in-out;
 
-// TODO: Refine the shadow box for dark and light and make it a variable.
-// => box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);
+// === SHADOW === //
+
+$box-shadow-base: 0px 4px 4px hsla(0, 0%, 0%, 0.188), 0px 12px 12px hsla(0, 0%, 0%, 0.082);

@@ -8,8 +8,6 @@ export function NotFoundPage() {
         <Layout>
             <LayoutHeader />
             <LayoutContent>
-                {/* <NotFound /> */}
-
                 <h1> Not Found Page </h1>
             </LayoutContent>
             <LayoutFooter />

@@ -1,11 +1,8 @@
-// DESIGN: VISITOR need to be able to "Register", "Login" and "Browse" the products.
-// DESIGN: BUYER need to be able to "Disconnect", "Browse" cart, "Check" account and "Browse" the products.
-// DESIGN: SELLER need to be able to "Disconnect", "Browse" past command, "Check" account and "Browse" the products.
-// DESIGN: ADMIN need to be able to "Disconnect", "Manage" dashboards.
-// IDEA: Have a sidebar for desktop and burger menu for mobile ?
-// TODO: Finish the Header
-
 export function LayoutHeader() {
+    // TODO: Finish the Header
+    // DESIGN: "Register" ; "Login" ; "Product" / "Disconnect" ; "Account" ; "Products" + (Home ; About ; Contact...)
+    // TODO: Implement a burger menu
+
     return (
         <header className="layout__header">
             <h2>Retroplace</h2>

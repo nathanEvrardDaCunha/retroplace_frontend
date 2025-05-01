@@ -10,6 +10,8 @@
     padding: 0;
 }
 
+// === STRUCTURE === //
+
 html {
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
@@ -17,12 +19,12 @@ html {
 
 body {
     font-family: variables.$font-geist;
-    // font-size: variables.$font-size-3;
-    // font-weight: variables.$font-weight-400;
-    // line-height: variables.$line-height-3;
+    font-size: variables.$font-size-base;
 
     min-height: 100vh;
 }
+
+// === DOCUMENT === //
 
 img,
 picture,
@@ -33,12 +35,33 @@ svg {
     max-width: 100%;
 }
 
+// === INFORMATION === //
+
 ul,
 ol {
     list-style: none;
 }
 
+// === INTERACTIVE === //
+
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
 }
