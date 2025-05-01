@@ -1,3 +1,5 @@
+import { CustomButton } from '../../../components/ui/CustomButton';
+
 export function LoginLogic() {
     function handleActionLogin(formData: FormData) {
         for (const [key, value] of formData.entries()) {
@@ -19,19 +21,31 @@ export function LoginLogic() {
                     <section>
                         <label htmlFor="email-account">Email</label>
                         <p>Write down your email address.</p>
-                        <input type="email" id="email-account" name="email-account" required />
+                        <input
+                            type="email"
+                            id="email-account"
+                            name="email-account"
+                            required
+                        />
                     </section>
 
                     <section>
                         <label htmlFor="password-account">Password</label>
                         <p>Write down your password.</p>
-                        <input type="password" id="password-account" name="password-account" required />
+                        <input
+                            type="password"
+                            id="password-account"
+                            name="password-account"
+                            required
+                        />
                         <a href="/reset-password">Reset Password</a>
                     </section>
 
                     <section>
                         <a href="/register">Create Account</a>
-                        <button type="submit">Submit</button>
+                        <CustomButton variant="default" onClick={undefined}>
+                            Authenticate Account
+                        </CustomButton>
                     </section>
                 </fieldset>
             </form>

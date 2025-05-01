@@ -26,6 +26,17 @@
     --color-light-accent-20: #{variables.$color-light-accent-20};
     --color-light-accent-10: #{variables.$color-light-accent-10};
 
+    --color-light-destructive-90: #{variables.$color-light-destructive-90};
+    --color-light-destructive-80: #{variables.$color-light-destructive-80};
+    --color-light-destructive-75: #{variables.$color-light-destructive-75};
+    --color-light-destructive-70: #{variables.$color-light-destructive-70};
+    --color-light-destructive-60: #{variables.$color-light-destructive-60};
+    --color-light-destructive-50: #{variables.$color-light-destructive-50};
+    --color-light-destructive-40: #{variables.$color-light-destructive-40};
+    --color-light-destructive-30: #{variables.$color-light-destructive-30};
+    --color-light-destructive-20: #{variables.$color-light-destructive-20};
+    --color-light-destructive-10: #{variables.$color-light-destructive-10};
+
     color-scheme: light dark;
 }
 
@@ -52,6 +63,17 @@
         --color-light-accent-30: #{variables.$color-dark-accent-30};
         --color-light-accent-20: #{variables.$color-dark-accent-20};
         --color-light-accent-10: #{variables.$color-dark-accent-10};
+
+        --color-light-destructive-90: #{variables.$color-dark-destructive-90};
+        --color-light-destructive-80: #{variables.$color-dark-destructive-80};
+        --color-light-destructive-75: #{variables.$color-dark-destructive-75};
+        --color-light-destructive-70: #{variables.$color-dark-destructive-70};
+        --color-light-destructive-60: #{variables.$color-dark-destructive-60};
+        --color-light-destructive-50: #{variables.$color-dark-destructive-50};
+        --color-light-destructive-40: #{variables.$color-dark-destructive-40};
+        --color-light-destructive-30: #{variables.$color-dark-destructive-30};
+        --color-light-destructive-20: #{variables.$color-dark-destructive-20};
+        --color-light-destructive-10: #{variables.$color-dark-destructive-10};
     }
 }
 

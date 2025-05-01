@@ -1,0 +1,89 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === CARD === //
+
+.card {
+    background-color: var(--color-light-neutral-90);
+    border-radius: variables.$spacing-0;
+    padding: variables.$spacing-3;
+    border: none;
+    box-shadow: variables.$box-shadow-base;
+    width: fit-content;
+}
+
+// === BUTTON === //
+
+@mixin button {
+    transition: variables.$transition-quick;
+    width: fit-content;
+    padding-inline: variables.$spacing-3;
+    padding-block: variables.$spacing-1;
+    border-radius: variables.$spacing-0;
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-700;
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.button--default {
+    @include button();
+
+    border: 2px solid var(--color-light-accent-30);
+    background-color: var(--color-light-accent-30);
+    color: var(--color-light-neutral-90);
+    &:hover,
+    &:focus {
+        border: 2px solid var(--color-light-accent-30);
+        background-color: transparent;
+        color: var(--color-light-accent-30);
+    }
+}
+
+.button--outline {
+    @include button();
+
+    border: 2px solid var(--color-light-accent-30);
+    background-color: transparent;
+    color: var(--color-light-accent-30);
+    &:hover,
+    &:focus {
+        border: 2px solid var(--color-light-accent-30);
+        background-color: var(--color-light-accent-30);
+        color: var(--color-light-neutral-90);
+    }
+}
+
+.button--destructive {
+    @include button();
+
+    border: 2px solid var(--color-light-destructive-30);
+    background-color: transparent;
+    color: var(--color-light-destructive-30);
+    &:hover,
+    &:focus {
+        border: 2px solid var(--color-light-destructive-30);
+        background-color: var(--color-light-destructive-30);
+        color: var(--color-light-neutral-90);
+    }
+}
+
+.button--destructive {
+    @include button();
+
+    border: 2px solid var(--color-light-destructive-20);
+    background-color: var(--color-light-destructive-20);
+    color: var(--color-light-neutral-90);
+    &:hover,
+    &:focus {
+        border: 2px solid var(--color-light-destructive-20);
+        background-color: transparent;
+        color: var(--color-light-destructive-20);
+    }
+}

@@ -1,3 +1,5 @@
+import { CustomButton } from '../../../components/ui/CustomButton';
+
 export function DeleteAccountLogic() {
     function handleActionDeleteAccount(formData: FormData) {
         for (const [key, value] of formData.entries()) {
@@ -16,17 +18,29 @@ export function DeleteAccountLogic() {
                     <section>
                         <label htmlFor="delete-email">Email</label>
                         <p>Write down your email address.</p>
-                        <input type="email" id="delete-email" name="delete-email" required />
+                        <input
+                            type="email"
+                            id="delete-email"
+                            name="delete-email"
+                            required
+                        />
                     </section>
 
                     <section>
                         <label htmlFor="delete-password">Password</label>
                         <p>Write down your password.</p>
-                        <input type="password" id="delete-password" name="delete-password" required />
+                        <input
+                            type="password"
+                            id="delete-password"
+                            name="delete-password"
+                            required
+                        />
                     </section>
 
                     <section>
-                        <button type="submit">Delete Account</button>
+                        <CustomButton variant="destructive" onClick={undefined}>
+                            Delete Account
+                        </CustomButton>
                     </section>
                 </fieldset>
             </form>

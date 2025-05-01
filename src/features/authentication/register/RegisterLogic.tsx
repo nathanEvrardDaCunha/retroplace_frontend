@@ -1,3 +1,5 @@
+import { CustomButton } from '../../../components/ui/CustomButton';
+
 export function RegisterLogic() {
     function handleActionRegister(formData: FormData) {
         for (const [key, value] of formData.entries()) {
@@ -31,13 +33,23 @@ export function RegisterLogic() {
                     <section>
                         <label htmlFor="email-account">Email</label>
                         <p>Write down your email address.</p>
-                        <input id="email-account" name="email-account" type="email" required />
+                        <input
+                            id="email-account"
+                            name="email-account"
+                            type="email"
+                            required
+                        />
                     </section>
 
                     <section>
                         <label htmlFor="password-account">Password</label>
                         <p>Write down your password.</p>
-                        <input id="password-account" name="password-account" type="password" required />
+                        <input
+                            id="password-account"
+                            name="password-account"
+                            type="password"
+                            required
+                        />
                     </section>
 
                     {/* Default value because can't required ??? */}
@@ -45,16 +57,28 @@ export function RegisterLogic() {
                         <label>Role</label>
                         <p>Select the role of this account.</p>
 
-                        <input id="buyer" name="role-account" value="buyer" type="radio" />
+                        <input
+                            id="buyer"
+                            name="role-account"
+                            value="buyer"
+                            type="radio"
+                        />
                         <label htmlFor="buyer">Buyer</label>
 
-                        <input id="seller" name="role-account" value="seller" type="radio" />
+                        <input
+                            id="seller"
+                            name="role-account"
+                            value="seller"
+                            type="radio"
+                        />
                         <label htmlFor="seller">Seller</label>
                     </section>
 
                     <section>
                         <a href="/login">Login Instead</a>
-                        <button type="submit">Submit</button>
+                        <CustomButton variant="default" onClick={undefined}>
+                            Create Account
+                        </CustomButton>
                     </section>
                 </fieldset>
             </form>

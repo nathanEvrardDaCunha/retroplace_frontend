@@ -1,3 +1,5 @@
+import { CustomButton } from '../../../components/ui/CustomButton';
+
 export function ResetPasswordLogic() {
     function handleActionResetPassword(formData: FormData) {
         for (const [key, value] of formData.entries()) {
@@ -29,7 +31,9 @@ export function ResetPasswordLogic() {
                     </section>
 
                     <section>
-                        <button>Submit</button>
+                        <CustomButton variant="default" onClick={undefined}>
+                            Reset Password
+                        </CustomButton>
                     </section>
                 </fieldset>
             </form>
