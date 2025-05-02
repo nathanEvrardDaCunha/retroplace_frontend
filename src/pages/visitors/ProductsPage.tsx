@@ -1,8 +1,8 @@
-import { Layout } from '../../../layouts/Layout';
-import { LayoutContent } from '../../../layouts/LayoutContent';
-import { LayoutFooter } from '../../../layouts/LayoutFooter';
-import { LayoutHeader } from '../../../layouts/LayoutHeader';
-import { BrowseProductLogic } from '../../../features/product/browse-product/BrowseProductLogic';
+import { BrowseProductLogic } from '../../features/product/BrowseProductLogic';
+import { Layout } from '../../layouts/Layout';
+import { LayoutContent } from '../../layouts/LayoutContent';
+import { LayoutFooter } from '../../layouts/LayoutFooter';
+import { LayoutHeader } from '../../layouts/LayoutHeader';
 
 export function ProductsPage() {
     // TODO: Implement one section to filter available product.

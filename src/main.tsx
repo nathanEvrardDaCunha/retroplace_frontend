@@ -1,16 +1,16 @@
+// TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { AccountModificationPage } from './pages/loggers/account-modification/AccountModificationPage';
-import { HomePage } from './pages/visitors/home/HomePage';
-import { LoginPage } from './pages/visitors/login/LoginPage';
-import { NotFoundPage } from './pages/visitors/not-found/NotFoundPage';
-import { ProductsPage } from './pages/visitors/products/ProductsPage';
-import { RegisterPage } from './pages/visitors/register/RegisterPage';
-import { ResetPasswordPage } from './pages/visitors/reset-password/ResetPasswordPage';
-import { AccountPage } from './pages/loggers/account/AccountPage';
-
-// TODO: When DB and authentication system are implemented, deny page requiring isLogin, isAdmin...
+import { AccountModificationPage } from './pages/loggers/AccountModificationPage';
+import { AccountPage } from './pages/loggers/AccountPage';
+import { HomePage } from './pages/visitors/HomePage';
+import { LoginPage } from './pages/visitors/LoginPage';
+import { NotFoundPage } from './pages/visitors/NotFoundPage';
+import { ProductsPage } from './pages/visitors/ProductsPage';
+import { RegisterPage } from './pages/visitors/RegisterPage';
+import { ResetPasswordPage } from './pages/visitors/ResetPasswordPage';
 
 // TODO: Implement authentication for theses routes:
 // - account/:id

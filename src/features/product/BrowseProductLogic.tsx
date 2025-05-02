@@ -1,4 +1,4 @@
-import { CustomButton } from '../../../components/ui/CustomButton';
+import { CustomButton } from '../../components/ui/CustomButton';
 
 export function BrowseProductLogic() {
     // TODO: Implement procedural card generation logic but with fake data through data structure.
