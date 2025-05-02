@@ -3,13 +3,14 @@ interface BaseInput {
     name: string;
     required?: boolean;
     value?: string;
+    onChange?: any;
 }
 
 interface TextInput extends BaseInput {
     type: 'text';
     maxlength?: number;
     minlength?: number;
-    pattern?: string;
+    // pattern?: string;
     spellcheck?: boolean;
     disabled?: boolean;
     placeholder?: string;
@@ -19,7 +20,7 @@ interface EmailInput extends BaseInput {
     type: 'email';
     maxlength?: number;
     minlength?: number;
-    pattern?: string;
+    // pattern?: string;
     disabled?: boolean;
     placeholder?: string;
 }
@@ -28,7 +29,7 @@ interface PasswordInput extends BaseInput {
     type: 'password';
     maxlength?: number;
     minlength?: number;
-    pattern?: string;
+    // pattern?: string;
     disabled?: boolean;
     placeholder?: string;
 }
@@ -79,13 +80,19 @@ interface RadioInput extends BaseInput {
 // }
 // }
 
-type CustomInputProps = TextInput | EmailInput | PasswordInput | DateInput | CheckboxInput | RadioInput;
+type CustomInputProps =
+    | TextInput
+    | EmailInput
+    | PasswordInput
+    | DateInput
+    | CheckboxInput
+    | RadioInput;
 
 // TODO: Implement Server Side Validation
 
 // TODO: Add style through className
 
-// TODO: Add "inputmode"
+// IDEA: Rename it "ControlledInput"
 
 export function CustomInput(props: CustomInputProps) {
     if (props.type === 'text') {
@@ -94,14 +101,24 @@ export function CustomInput(props: CustomInputProps) {
                 type="text"
                 id={props.id}
                 name={props.name}
-                placeholder={props.placeholder === undefined ? 'Default Value' : props.placeholder}
+                placeholder={
+                    props.placeholder === undefined
+                        ? 'Default Value'
+                        : props.placeholder
+                }
                 value={props.value === undefined ? '' : props.value}
                 disabled={props.disabled === undefined ? false : props.disabled}
                 required={props.required === undefined ? false : props.required}
-                maxLength={props.maxlength === undefined ? 255 : props.maxlength}
+                maxLength={
+                    props.maxlength === undefined ? 255 : props.maxlength
+                }
                 minLength={props.minlength === undefined ? 0 : props.minlength}
-                pattern={props.pattern === undefined ? '' : props.pattern}
-                spellCheck={props.spellcheck === undefined ? false : props.spellcheck}
+                // pattern={props.pattern === undefined ? '' : props.pattern}
+                spellCheck={
+                    props.spellcheck === undefined ? false : props.spellcheck
+                }
+                inputMode="text"
+                onChange={props.onChange}
             />
         );
     }
@@ -112,13 +129,21 @@ export function CustomInput(props: CustomInputProps) {
                 type="email"
                 id={props.id}
                 name={props.name}
-                placeholder={props.placeholder === undefined ? 'default.email@gmail.com' : props.placeholder}
+                placeholder={
+                    props.placeholder === undefined
+                        ? 'default.email@gmail.com'
+                        : props.placeholder
+                }
                 value={props.value === undefined ? '' : props.value}
                 disabled={props.disabled === undefined ? false : props.disabled}
                 required={props.required === undefined ? false : props.required}
-                maxLength={props.maxlength === undefined ? 255 : props.maxlength}
+                maxLength={
+                    props.maxlength === undefined ? 255 : props.maxlength
+                }
                 minLength={props.minlength === undefined ? 0 : props.minlength}
-                pattern={props.pattern === undefined ? '' : props.pattern}
+                // pattern={props.pattern === undefined ? '' : props.pattern}
+                inputMode="email"
+                onChange={props.onChange}
             />
         );
     }
@@ -129,13 +154,21 @@ export function CustomInput(props: CustomInputProps) {
                 type="password"
                 id={props.id}
                 name={props.name}
-                placeholder={props.placeholder === undefined ? '**************' : props.placeholder}
+                placeholder={
+                    props.placeholder === undefined
+                        ? '**************'
+                        : props.placeholder
+                }
                 value={props.value === undefined ? '' : props.value}
                 disabled={props.disabled === undefined ? false : props.disabled}
                 required={props.required === undefined ? false : props.required}
-                maxLength={props.maxlength === undefined ? 255 : props.maxlength}
+                maxLength={
+                    props.maxlength === undefined ? 255 : props.maxlength
+                }
                 minLength={props.minlength === undefined ? 0 : props.minlength}
-                pattern={props.pattern === undefined ? '' : props.pattern}
+                // pattern={props.pattern === undefined ? '' : props.pattern}
+                inputMode="text"
+                onChange={props.onChange}
             />
         );
     }
@@ -152,6 +185,8 @@ export function CustomInput(props: CustomInputProps) {
                 max={props.max === undefined ? '2050-01-01' : props.max}
                 min={props.min === undefined ? '1930-01-01' : props.min}
                 step={props.step === undefined ? 1 : props.step}
+                inputMode="none"
+                onChange={props.onChange}
             />
         );
     }
@@ -165,6 +200,9 @@ export function CustomInput(props: CustomInputProps) {
                 checked={props.checked === undefined ? false : props.checked}
                 disabled={props.disabled === undefined ? false : props.disabled}
                 required={props.required === undefined ? false : props.required}
+                value={props.value === undefined ? 'default' : props.value}
+                inputMode="none"
+                onChange={props.onChange}
             />
         );
     }
@@ -176,6 +214,9 @@ export function CustomInput(props: CustomInputProps) {
             name={props.name}
             checked={props.checked === undefined ? false : props.checked}
             required={props.required === undefined ? false : props.required}
+            value={props.value === undefined ? 'default' : props.value}
+            inputMode="none"
+            onChange={props.onChange}
         />
     );
 }
