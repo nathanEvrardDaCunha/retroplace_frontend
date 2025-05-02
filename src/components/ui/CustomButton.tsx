@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './ui-style.scss';
 
 interface BaseButton {
     children: string;
@@ -16,26 +17,24 @@ interface LinkButton extends BaseButton {
 
 type ButtonProps = DefaultButton | LinkButton;
 
+// IDEA: Add style based not only on "variant" but "variant" and "style" like "CustomHeading"
+// "variant" is for html logic
+// "style" is for css logic
+
+// IDEA: Make each variant optional with ternary
+// IDEA: Make to optional with ternary
+// IDEA: Make onClick optional with ternary
+
 export function CustomButton(props: ButtonProps) {
-    if (props.variant === 'default') {
-        return <button className="button--default">{props.children}</button>;
-    }
-
-    if (props.variant === 'outline') {
-        return <button className="button--outline">{props.children}</button>;
-    }
-
-    if (props.variant === 'destructive') {
-        return <button className="button--destructive">{props.children}</button>;
-    }
+    const className = `button--${props.variant}`;
 
     if (props.variant === 'link') {
         return (
             <Link to={props.to}>
-                <button className="button--default">{props.children}</button>
+                <button className={className}>{props.children}</button>
             </Link>
         );
     }
 
-    return <button>PROBLEM WITH THE BUTTON VARIANT</button>;
+    return <button className={className}>{props.children}</button>;
 }
