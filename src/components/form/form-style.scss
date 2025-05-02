@@ -1,0 +1,55 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === LOCAL-VARIABLE === //
+
+$min-width-fluid: 256px;
+$width-fluid: 100%;
+$max-width-fluid: 450px;
+
+// === FORM === //
+
+.form {
+    display: flex;
+    flex-direction: column;
+    min-width: $min-width-fluid;
+    width: $width-fluid;
+    max-width: $max-width-fluid;
+}
+
+// === LABEL === //
+
+@mixin labelBase() {
+    color: var(--color-light-neutral-10);
+}
+
+@mixin labelExtension($font-size, $font-weight, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+.label--default {
+    @include labelBase();
+
+    @include labelExtension(
+        variables.$font-size-large,
+        variables.$font-weight-700,
+        variables.$line-height-large
+    );
+}
+
+// IDEA: Might refactor these3 variables 'size / weight / height' by merging them from all file into one.
+
+.label--radio {
+    @include labelBase();
+
+    @include labelExtension(
+        variables.$font-size-base,
+        variables.$font-weight-400,
+        variables.$line-height-base
+    );
+}
+
+// === INPUT === //
