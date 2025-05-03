@@ -7,7 +7,9 @@
 
 :root {
     --color-light-neutral-90: #{variables.$color-light-neutral-90};
+    --color-light-neutral-85: #{variables.$color-light-neutral-85};
     --color-light-neutral-80: #{variables.$color-light-neutral-80};
+    --color-light-neutral-75: #{variables.$color-light-neutral-75};
     --color-light-neutral-70: #{variables.$color-light-neutral-70};
     --color-light-neutral-60: #{variables.$color-light-neutral-60};
     --color-light-neutral-50: #{variables.$color-light-neutral-50};
@@ -45,7 +47,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-light-neutral-90: #{variables.$color-dark-neutral-90};
+        --color-light-neutral-85: #{variables.$color-dark-neutral-85};
         --color-light-neutral-80: #{variables.$color-dark-neutral-80};
+        --color-light-neutral-75: #{variables.$color-dark-neutral-75};
         --color-light-neutral-70: #{variables.$color-dark-neutral-70};
         --color-light-neutral-60: #{variables.$color-dark-neutral-60};
         --color-light-neutral-50: #{variables.$color-dark-neutral-50};

@@ -1,0 +1,136 @@
+// === EXTERNAL === //
+
+@use '../../assets/variables';
+
+// === LOCAL-VARIABLE === //
+
+// $min-width-fluid: 256px;
+// $width-fluid: 100%;
+// $max-width-fluid: 450px;
+
+// === TABLE === //
+
+.table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+// === TABLE-CAPTION === //
+
+.table__caption {
+    font-weight: variables.$font-weight-700;
+    font-size: variables.$font-size-big;
+    color: var(--color-light-neutral-10);
+    line-height: variables.$line-height-big;
+    padding-inline: variables.$spacing-3;
+    padding-block-start: variables.$spacing-6;
+    background-color: var(--color-light-neutral-85);
+}
+
+// === TABLE-HEAD === //
+
+@mixin tableHeadHeadingBase() {
+    font-weight: variables.$font-weight-500;
+    font-size: variables.$font-size-large;
+    color: var(--color-light-neutral-10);
+    line-height: variables.$line-height-large;
+    text-align: center;
+}
+
+@mixin tableHeadHeadingExtension($width) {
+    width: $width;
+}
+
+.table__head {
+    width: 100%;
+    background-color: var(--color-light-neutral-85);
+}
+
+.table__head .table__row :nth-child(1) {
+    @include tableHeadHeadingBase();
+
+    @include tableHeadHeadingExtension(12.5%);
+}
+
+.table__head .table__row :nth-child(2) {
+    @include tableHeadHeadingBase();
+
+    @include tableHeadHeadingExtension(12.5%);
+}
+
+.table__head .table__row :nth-child(3) {
+    @include tableHeadHeadingBase();
+
+    @include tableHeadHeadingExtension(37.5%);
+}
+
+.table__head .table__row :nth-child(4) {
+    @include tableHeadHeadingBase();
+
+    @include tableHeadHeadingExtension(12.5%);
+}
+
+.table__head .table__row :nth-child(5) {
+    @include tableHeadHeadingBase();
+
+    @include tableHeadHeadingExtension(12.5%);
+}
+
+.table__head .table__row :nth-child(6) {
+    @include tableHeadHeadingBase();
+
+    @include tableHeadHeadingExtension(12.5%);
+}
+
+// === TABLE-BODY === //
+
+.table__body {
+    width: 100%;
+}
+
+.table__body .table__row:nth-child(odd) {
+    background-color: var(--color-light-neutral-80);
+}
+
+.table__body .table__row:nth-child(even) {
+    background-color: var(--color-light-neutral-75);
+}
+
+// === TABLE-FOOT === //
+
+.table__foot {
+    background-color: var(--color-light-neutral-85);
+    width: 100%;
+}
+
+// === TABLE-ROW === //
+
+.table__row {
+    height: 100px;
+}
+
+// === TABLE-HEADING === //
+
+.table__heading {
+    padding-inline: variables.$spacing-3;
+    padding-block: variables.$spacing-3;
+    text-align: start;
+
+    font-weight: variables.$font-weight-400;
+    font-size: variables.$font-size-base;
+    color: var(--color-light-neutral-10);
+    line-height: variables.$line-height-base;
+}
+
+// === TABLE-DATA === //
+.table__data {
+    padding-inline: variables.$spacing-3;
+    padding-block: variables.$spacing-3;
+    text-align: start;
+
+    font-weight: variables.$font-weight-400;
+    font-size: variables.$font-size-base;
+    color: var(--color-light-neutral-10);
+    line-height: variables.$line-height-base;
+}

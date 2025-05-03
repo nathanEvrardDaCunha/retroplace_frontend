@@ -11,10 +11,12 @@ import { NotFoundPage } from './pages/visitors/NotFoundPage';
 import { ProductsPage } from './pages/visitors/ProductsPage';
 import { RegisterPage } from './pages/visitors/RegisterPage';
 import { ResetPasswordPage } from './pages/visitors/ResetPasswordPage';
+import { AccountReportsPage } from './pages/loggers/(customer)/AccountReportsPage';
 
 // TODO: Implement authentication for theses routes:
 // - account/:id
 // - account-modification/:id
+// - account-reports/:id
 
 // TODO: Add theses following routes/pages:
 // - About us
@@ -33,6 +35,7 @@ const router = createBrowserRouter([
     { path: '/reset-password', element: <ResetPasswordPage /> },
     { path: '/account/:id', element: <AccountPage /> },
     { path: '/account-modification/:id', element: <AccountModificationPage /> },
+    { path: '/account-reports/:id', element: <AccountReportsPage /> },
     { path: '/*', element: <NotFoundPage /> },
 ]);
 
