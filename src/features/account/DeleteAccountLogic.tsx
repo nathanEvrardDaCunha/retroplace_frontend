@@ -2,9 +2,10 @@ import { SetStateAction, useState } from 'react';
 import { CustomForm } from '../../components/form/CustomForm';
 import { CustomInput } from '../../components/form/CustomInput';
 import { CustomLabel } from '../../components/form/CustomLabel';
-import { CustomButton } from '../../components/ui/CustomButton';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomSection } from '../../components/ui/CustomSection';
+import { Button } from '../../components/ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 // TODO: Add Server Side Verification to make sure the "password" and "confirmation message" are valid
 // TODO: Need to automatically redirect the user to the "home" page
@@ -13,12 +14,20 @@ export function DeleteAccountLogic() {
     const [formConfirmation, setFormConfirmation] = useState('');
     const [formPassword, setFormPassword] = useState('');
 
+    const navigate = useNavigate();
+
     function handleActionDeleteAccount(formData: FormData) {
         for (const [key, value] of formData.entries()) {
             console.log(key, value);
         }
 
         clearForm();
+
+        // TODO: When form is a failure, tell it to the user through a message.
+        // TODO: When Backend implemented,  don't forget to implement an authentication system.
+        // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
+
+        navigate('/');
     }
 
     function clearForm() {
@@ -84,9 +93,9 @@ export function DeleteAccountLogic() {
                     </CustomSection>
 
                     <CustomSection variant="section" style="row">
-                        <CustomButton variant="destructive" onClick={undefined}>
+                        <Button variant="destructive" onClick={undefined}>
                             Delete Account
-                        </CustomButton>
+                        </Button>
                     </CustomSection>
                 </CustomSection>
             </CustomForm>

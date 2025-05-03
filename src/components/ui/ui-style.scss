@@ -28,6 +28,8 @@ $transform-scale-active: scale(0.95);
     }
 }
 
+// FIX: Disable button are too similar to any normal button for monochromatic color-blind
+// => IDEA: Outline for disabled button and full for enable button only ?
 @mixin buttonFull($color, $text-color) {
     border: 2px solid $color;
     background-color: $color;
@@ -36,6 +38,13 @@ $transform-scale-active: scale(0.95);
     &:focus {
         background-color: transparent;
         color: $color;
+    }
+    &:disabled {
+        background-color: var(--color-light-neutral-10);
+        color: var(--color-light-neutral-90);
+        border: 2px solid var(--color-light-neutral-10);
+        transform: $transform-scale-base;
+        cursor: default;
     }
 }
 
@@ -47,6 +56,13 @@ $transform-scale-active: scale(0.95);
     &:focus {
         background-color: $color;
         color: $text-color;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: var(--color-light-neutral-10);
+        border: 2px solid var(--color-light-neutral-10);
+        transform: $transform-scale-base;
+        cursor: default;
     }
 }
 

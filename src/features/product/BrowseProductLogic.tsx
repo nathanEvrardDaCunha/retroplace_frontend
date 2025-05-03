@@ -1,4 +1,4 @@
-import { CustomButton } from '../../components/ui/CustomButton';
+import { Button } from '../../components/ui/Button';
 
 export function BrowseProductLogic() {
     // TODO: Implement procedural card generation logic but with fake data through data structure.
@@ -20,12 +20,12 @@ export function BrowseProductLogic() {
                 </section>
 
                 <section>
-                    <CustomButton variant="destructive" onClick={undefined}>
+                    <Button variant="destructive" onClick={undefined}>
                         Report Product
-                    </CustomButton>
-                    <CustomButton variant="outline" onClick={undefined}>
+                    </Button>
+                    <Button variant="outline" onClick={undefined}>
                         See More
-                    </CustomButton>
+                    </Button>
                 </section>
             </article>
 
@@ -44,12 +44,12 @@ export function BrowseProductLogic() {
                 </section>
 
                 <section>
-                    <CustomButton variant="destructive" onClick={undefined}>
+                    <Button variant="destructive" onClick={undefined}>
                         Report Product
-                    </CustomButton>
-                    <CustomButton variant="outline" onClick={undefined}>
+                    </Button>
+                    <Button variant="outline" onClick={undefined}>
                         See More
-                    </CustomButton>
+                    </Button>
                 </section>
             </article>
 
@@ -68,12 +68,12 @@ export function BrowseProductLogic() {
                 </section>
 
                 <section>
-                    <CustomButton variant="destructive" onClick={undefined}>
+                    <Button variant="destructive" onClick={undefined}>
                         Report Product
-                    </CustomButton>
-                    <CustomButton variant="outline" onClick={undefined}>
+                    </Button>
+                    <Button variant="outline" onClick={undefined}>
                         See More
-                    </CustomButton>
+                    </Button>
                 </section>
             </article>
 
@@ -92,12 +92,12 @@ export function BrowseProductLogic() {
                 </section>
 
                 <section>
-                    <CustomButton variant="destructive" onClick={undefined}>
+                    <Button variant="destructive" onClick={undefined}>
                         Report Product
-                    </CustomButton>
-                    <CustomButton variant="outline" onClick={undefined}>
+                    </Button>
+                    <Button variant="outline" onClick={undefined}>
                         See More
-                    </CustomButton>
+                    </Button>
                 </section>
             </article>
 
@@ -116,12 +116,12 @@ export function BrowseProductLogic() {
                 </section>
 
                 <section>
-                    <CustomButton variant="destructive" onClick={undefined}>
+                    <Button variant="destructive" onClick={undefined}>
                         Report Product
-                    </CustomButton>
-                    <CustomButton variant="outline" onClick={undefined}>
+                    </Button>
+                    <Button variant="outline" onClick={undefined}>
                         See More
-                    </CustomButton>
+                    </Button>
                 </section>
             </article>
         </>

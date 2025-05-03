@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { CustomButton } from '../../components/ui/CustomButton';
+import { Button } from '../../components/ui/Button';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomSection } from '../../components/ui/CustomSection';
 
@@ -36,12 +36,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/account-cart/${params.id}`}
                             >
                                 Browse Cart
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -56,12 +56,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/account-history/${params.id}`}
                             >
                                 Browse History
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
                 </>
@@ -80,12 +80,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/account-modification/${params.id}`}
                             >
                                 Access Information
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -100,12 +100,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/account-certification/${params.id}`}
                             >
                                 Certify Account
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -120,12 +120,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/account-reports/${params.id}`}
                             >
                                 Browse Reports
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
                 </>
@@ -144,12 +144,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/seller-available/${params.id}`}
                             >
                                 Browse Available
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -164,12 +164,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/seller-reserved/${params.id}`}
                             >
                                 Browse Reserved
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -184,12 +184,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/seller-history/${params.id}`}
                             >
                                 Browse History
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
                 </>
@@ -211,12 +211,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-available/${params.id}`}
                             >
                                 Browse Available
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -231,12 +231,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-reserved/${params.id}`}
                             >
                                 Browse Reserved
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -251,12 +251,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-history/${params.id}`}
                             >
                                 Browse History
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -270,12 +270,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-users/${params.id}`}
                             >
                                 Browse Users
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -289,12 +289,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-reviews/${params.id}`}
                             >
                                 Browse Reviews
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -308,12 +308,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-sanctions/${params.id}`}
                             >
                                 Browse Sanctions
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
 
@@ -327,12 +327,12 @@ export function BrowseAccountLogic() {
                             </CustomHeading>
                         </CustomSection>
                         <CustomSection variant="section" style="row">
-                            <CustomButton
+                            <Button
                                 variant="link"
                                 to={`/admin-financial/${params.id}`}
                             >
                                 Browse Cashflow
-                            </CustomButton>
+                            </Button>
                         </CustomSection>
                     </CustomSection>
                 </>

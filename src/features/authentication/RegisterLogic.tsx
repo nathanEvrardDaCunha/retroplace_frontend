@@ -2,10 +2,11 @@ import { SetStateAction, useState } from 'react';
 import { CustomForm } from '../../components/form/CustomForm';
 import { CustomInput } from '../../components/form/CustomInput';
 import { CustomLabel } from '../../components/form/CustomLabel';
-import { CustomButton } from '../../components/ui/CustomButton';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomLink } from '../../components/ui/CustomLink';
 import { CustomSection } from '../../components/ui/CustomSection';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '../../components/ui/Button';
 
 export function RegisterLogic() {
     const [formUsername, setFormUsername] = useState('');
@@ -13,12 +14,20 @@ export function RegisterLogic() {
     const [formPassword, setFormPassword] = useState('');
     const [formRadio, setFormRadio] = useState('');
 
+    const navigate = useNavigate();
+
     function handleActionRegister(formData: FormData) {
         for (const [key, value] of formData.entries()) {
             console.log(key, value);
         }
 
         clearForm();
+
+        // TODO: When form is a failure, tell it to the user through a message.
+        // TODO: When Backend implemented,  don't forget to implement an authentication system.
+        // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
+
+        navigate('/login');
     }
 
     function clearForm() {
@@ -27,11 +36,6 @@ export function RegisterLogic() {
         setFormPassword('');
         setFormRadio('');
     }
-
-    // TODO: When form is a success, redirect to personal-account page.
-    // TODO: When form is a success, tell it to the user through a message.
-    // TODO: When Backend implemented,  don't forget to implement an authentication system.
-    // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
 
     return (
         <>
@@ -160,9 +164,9 @@ export function RegisterLogic() {
                             Login Instead
                         </CustomLink>
 
-                        <CustomButton variant="default" onClick={undefined}>
+                        <Button variant="default" onClick={undefined}>
                             Create Account
-                        </CustomButton>
+                        </Button>
                     </CustomSection>
                 </CustomSection>
             </CustomForm>

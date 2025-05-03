@@ -1,7 +1,7 @@
 import { SetStateAction, useState } from 'react';
 import { CustomForm } from '../../components/form/CustomForm';
 import { CustomInput } from '../../components/form/CustomInput';
-import { CustomButton } from '../../components/ui/CustomButton';
+import { Button } from '../../components/ui/Button';
 import { CustomSection } from '../../components/ui/CustomSection';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomLabel } from '../../components/form/CustomLabel';
@@ -60,9 +60,9 @@ export function ResetPasswordLogic() {
                     </CustomSection>
 
                     <CustomSection variant="section" style="row">
-                        <CustomButton variant="default" onClick={undefined}>
+                        <Button variant="default" onClick={undefined}>
                             Reset Password
-                        </CustomButton>
+                        </Button>
                     </CustomSection>
                 </CustomSection>
             </CustomForm>

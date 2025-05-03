@@ -2,14 +2,17 @@ import { useState, SetStateAction } from 'react';
 import { CustomForm } from '../../components/form/CustomForm';
 import { CustomInput } from '../../components/form/CustomInput';
 import { CustomLabel } from '../../components/form/CustomLabel';
-import { CustomButton } from '../../components/ui/CustomButton';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomLink } from '../../components/ui/CustomLink';
 import { CustomSection } from '../../components/ui/CustomSection';
+import { Button } from '../../components/ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 export function LoginLogic() {
     const [formEmail, setFormEmail] = useState('');
     const [formPassword, setFormPassword] = useState('');
+
+    const navigate = useNavigate();
 
     function handleActionLogin(formData: FormData) {
         for (const [key, value] of formData.entries()) {
@@ -17,17 +20,18 @@ export function LoginLogic() {
         }
 
         clearForm();
+
+        // TODO: When form is a success, tell it to the user through a message.
+        // TODO: When Backend implemented,  don't forget to implement an authentication system.
+        // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
+
+        navigate('/account/33');
     }
 
     function clearForm() {
         setFormEmail('');
         setFormPassword('');
     }
-
-    // TODO: When form is a success, redirect to personal-account page.
-    // TODO: When form is a success, tell it to the user through a message.
-    // TODO: When Backend implemented,  don't forget to implement an authentication system.
-    // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
 
     return (
         <>
@@ -93,9 +97,9 @@ export function LoginLogic() {
                             Create Account
                         </CustomLink>
 
-                        <CustomButton variant="default" onClick={undefined}>
+                        <Button variant="default" onClick={undefined}>
                             Authenticate Account
-                        </CustomButton>
+                        </Button>
                     </CustomSection>
                 </CustomSection>
             </CustomForm>

@@ -2,9 +2,10 @@ import { SetStateAction, useState } from 'react';
 import { CustomForm } from '../../components/form/CustomForm';
 import { CustomInput } from '../../components/form/CustomInput';
 import { CustomLabel } from '../../components/form/CustomLabel';
-import { CustomButton } from '../../components/ui/CustomButton';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomSection } from '../../components/ui/CustomSection';
+import { Button } from '../../components/ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 // TODO: Need to inform the user the form was either a failure or a success
 
@@ -13,12 +14,20 @@ export function UpdateAccountLogic() {
     const [formEmail, setFormEmail] = useState('');
     const [formPassword, setFormPassword] = useState('');
 
+    const navigate = useNavigate();
+
     function handleActionUpdateAccount(formData: FormData) {
         for (const [key, value] of formData.entries()) {
             console.log(key, value);
         }
 
         clearForm();
+
+        // TODO: When form is a failure, tell it to the user through a message.
+        // TODO: When Backend implemented,  don't forget to implement an authentication system.
+        // TODO: When Backend implemented, don't forget to verify user data on the server instead of client.
+
+        navigate('/account/33');
     }
 
     function clearForm() {
@@ -105,9 +114,9 @@ export function UpdateAccountLogic() {
                     </CustomSection>
 
                     <CustomSection variant="section" style="row">
-                        <CustomButton variant="outline" onClick={undefined}>
+                        <Button variant="outline" onClick={undefined}>
                             Update Account
-                        </CustomButton>
+                        </Button>
                     </CustomSection>
                 </CustomSection>
             </CustomForm>

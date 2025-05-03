@@ -1,7 +1,7 @@
 import './table-style.scss';
 
 interface TableDataProps {
-    children: string | number;
+    children: string | number | React.ReactNode;
 }
 
 export function TableData(props: TableDataProps) {

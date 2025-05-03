@@ -1,6 +1,6 @@
 // IDEA: Might replace this by a custom "Message" component
 
-import { CustomButton } from '../../components/ui/CustomButton';
+import { Button } from '../../components/ui/Button';
 import { CustomHeading } from '../../components/ui/CustomHeading';
 import { CustomSection } from '../../components/ui/CustomSection';
 import { Layout } from '../../layouts/Layout';
@@ -23,9 +23,9 @@ export function NotFoundPage() {
                         can go back to the home page by clicking the link below.
                     </CustomHeading>
 
-                    <CustomButton variant="link" to="/">
+                    <Button variant="link" to="/">
                         Go Home
-                    </CustomButton>
+                    </Button>
                 </CustomSection>
             </LayoutContent>
             <LayoutFooter />
