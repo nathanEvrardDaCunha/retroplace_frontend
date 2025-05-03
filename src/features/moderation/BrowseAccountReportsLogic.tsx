@@ -6,6 +6,7 @@ import { TableFoot } from '../../components/table/TableFoot';
 import { TableHead } from '../../components/table/TableHead';
 import { TableHeading } from '../../components/table/TableHeading';
 import { TableRow } from '../../components/table/TableRow';
+import { Button } from '../../components/ui/Button';
 
 export function BrowseAccountReportsLogic() {
     // IDEA: Table of reports (whereReported, whenReported, whyReported, statusOfReport, whatIsReported)
@@ -56,9 +57,11 @@ export function BrowseAccountReportsLogic() {
                         </TableData>
                         <TableData>Appeal Available</TableData>
                         <TableData>Seller</TableData>
-                        <td>
-                            <button>Appeal</button>
-                        </td>
+                        <TableData>
+                            <Button variant="default" onClick={undefined}>
+                                Appeal
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">Spam</TableHeading>
@@ -70,9 +73,15 @@ export function BrowseAccountReportsLogic() {
                         </TableData>
                         <TableData>Under Review</TableData>
                         <TableData>Buyer</TableData>
-                        <td>
-                            <button disabled={true}>Appeal</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                Appeal
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">Fraud</TableHeading>
@@ -84,9 +93,15 @@ export function BrowseAccountReportsLogic() {
                         </TableData>
                         <TableData>Resolved</TableData>
                         <TableData>Buyer</TableData>
-                        <td>
-                            <button disabled={true}>Appeal</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                Appeal
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">Harassment</TableHeading>
@@ -97,9 +112,15 @@ export function BrowseAccountReportsLogic() {
                         </TableData>
                         <TableData>Appeal Denied</TableData>
                         <TableData>Seller</TableData>
-                        <td>
-                            <button disabled={true}>Appeal</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                Appeal
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">
@@ -113,9 +134,15 @@ export function BrowseAccountReportsLogic() {
                         </TableData>
                         <TableData>Pending</TableData>
                         <TableData>Buyer</TableData>
-                        <td>
-                            <button disabled={true}>Appeal</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                Appeal
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">null</TableHeading>
@@ -123,9 +150,15 @@ export function BrowseAccountReportsLogic() {
                         <TableData>null</TableData>
                         <TableData>null</TableData>
                         <TableData>null</TableData>
-                        <td>
-                            <button disabled={true}>null</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                null
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">null</TableHeading>
@@ -133,9 +166,15 @@ export function BrowseAccountReportsLogic() {
                         <TableData>null</TableData>
                         <TableData>null</TableData>
                         <TableData>null</TableData>
-                        <td>
-                            <button disabled={true}>null</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                null
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">null</TableHeading>
@@ -143,9 +182,15 @@ export function BrowseAccountReportsLogic() {
                         <TableData>null</TableData>
                         <TableData>null</TableData>
                         <TableData>null</TableData>
-                        <td>
-                            <button disabled={true}>null</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="default"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                null
+                            </Button>
+                        </TableData>
                     </TableRow>
                     <TableRow>
                         <TableHeading scope="row">null</TableHeading>
@@ -153,9 +198,15 @@ export function BrowseAccountReportsLogic() {
                         <TableData>null</TableData>
                         <TableData>null</TableData>
                         <TableData>null</TableData>
-                        <td>
-                            <button disabled={true}>null</button>
-                        </td>
+                        <TableData>
+                            <Button
+                                variant="outline"
+                                onClick={undefined}
+                                disabled={true}
+                            >
+                                null
+                            </Button>
+                        </TableData>
                     </TableRow>
                 </TableBody>
 

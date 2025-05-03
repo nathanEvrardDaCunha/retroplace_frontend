@@ -3,6 +3,7 @@ import './ui-style.scss';
 
 interface BaseButton {
     children: string;
+    disabled?: boolean;
 }
 
 interface DefaultButton extends BaseButton {
@@ -25,16 +26,25 @@ type ButtonProps = DefaultButton | LinkButton;
 // IDEA: Make to optional with ternary
 // IDEA: Make onClick optional with ternary
 
-export function CustomButton(props: ButtonProps) {
+export function Button(props: ButtonProps) {
+    const buttonDisabled =
+        props.disabled === undefined ? false : props.disabled;
+
     const className = `button--${props.variant}`;
 
     if (props.variant === 'link') {
         return (
             <Link to={props.to}>
-                <button className={className}>{props.children}</button>
+                <button className={className} disabled={buttonDisabled}>
+                    {props.children}
+                </button>
             </Link>
         );
     }
 
-    return <button className={className}>{props.children}</button>;
+    return (
+        <button className={className} disabled={buttonDisabled}>
+            {props.children}
+        </button>
+    );
 }
