@@ -1,9 +1,15 @@
 import { useParams } from 'react-router-dom';
+import { CustomButton } from '../../components/ui/CustomButton';
+import { CustomHeading } from '../../components/ui/CustomHeading';
+import { CustomSection } from '../../components/ui/CustomSection';
 
 export function BrowseAccountLogic() {
     const params = useParams();
 
     console.log(params.id);
+
+    // IDEA: Enum for the roles
+    const staticUserRole = 'seller';
 
     // TODO: Add a link that return to the previous page or home page.
     // DESIGN: Admin shouldn't be allowed to update and delete their colleagues.
@@ -13,188 +19,324 @@ export function BrowseAccountLogic() {
         <>
             <strong>Account ID : {params.id ? params.id : 'undefined'}</strong>
 
-            {/*
-        // Only for customers (buyer and seller only).
-        
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Personal Information's</CardTitle>
+            <CustomHeading variant="h1" style="h1">
+                Account
+            </CustomHeading>
 
-                <CardItem variant="item">
-                    Here reside the process to delete or update your account.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Delete Account</Button>
-                <Button>Update Account</Button>
-            </CardSection>
-        </Card>
+            {staticUserRole === 'buyer' ? (
+                <>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Products Cart
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products you've saved in
+                                your cart to purchase later.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/account-cart/${params.id}`}
+                            >
+                                Browse Cart
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Identity Certification</CardTitle>
-                <CardItem variant="item">Here reside the process to verify you're a not a bot.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Certify Account</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Past Commands
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products you've already
+                                purchased in the past.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/account-history/${params.id}`}
+                            >
+                                Browse History
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
+                </>
+            ) : null}
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Incident Reports</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the anonymous report made about your displeasing behavior.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Report</Button>
-            </CardSection>
-        </Card> */}
+            {staticUserRole === 'seller' || staticUserRole === 'buyer' ? (
+                <>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Personal Information
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside the process to delete or update your
+                                account.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/account-modification/${params.id}`}
+                            >
+                                Access Information
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-            {/*                     
-        //Only for the Buyer
-        
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Products Cart</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the products you've saved to purchase in one go.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Cart</Button>
-            </CardSection>
-        </Card> 
-        
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Past Commands</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the products you've already purchased in the past.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse History</Button>
-            </CardSection>
-        </Card> */}
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Identity Certification
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside the process to verify you're not a
+                                bot.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/account-certification/${params.id}`}
+                            >
+                                Certify Account
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-            {/* 
-        // Only for Seller
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Incident Reports
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the anonymous reports made about
+                                your displeasing behavior.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/account-reports/${params.id}`}
+                            >
+                                Browse Reports
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
+                </>
+            ) : null}
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Available Products</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the products you sell which aren't reserved yet.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Available</Button>
-            </CardSection>
-        </Card>
+            {staticUserRole === 'seller' ? (
+                <>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Available Products
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products you sell which
+                                aren't reserved yet.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/seller-available/${params.id}`}
+                            >
+                                Browse Available
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Reserved Products</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the products you sell which are purchased and waiting for transport.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Reserved</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Reserved Products
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products you sell which are
+                                purchased and waiting for transport.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/seller-reserved/${params.id}`}
+                            >
+                                Browse Reserved
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Past Commands</CardTitle>
-                <CardItem variant="item">Here reside all the products you've sold in the past.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse History</Button>
-            </CardSection>
-        </Card> */}
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Past Commands
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products you've sold in the
+                                past.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/seller-history/${params.id}`}
+                            >
+                                Browse History
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
+                </>
+            ) : null}
 
             {/* Only the SuperAdmin should be able to modify and delete the admins */}
             {/* In "Reputation Review", Add Review for Seller and Buyers about each others */}
 
-            {/* 
-        //Only for Admins
-        
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Available Products</CardTitle>
-                <CardItem variant="item">Here reside all the products available on the website.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Available</Button>
-            </CardSection>
-        </Card>
+            {staticUserRole === 'admin' || staticUserRole === 'root' ? (
+                <>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Available Products
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products available on the
+                                website.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-available/${params.id}`}
+                            >
+                                Browse Available
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Reserved Products</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the products currently purchased and waiting for transport.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Reserved</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Reserved Products
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products currently purchased
+                                and waiting for transport.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-reserved/${params.id}`}
+                            >
+                                Browse Reserved
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Past Commands</CardTitle>
-                <CardItem variant="item">
-                    Here reside all the products which've been sold in the past.
-                </CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse History</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Past Commands
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the products which've been sold
+                                in the past.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-history/${params.id}`}
+                            >
+                                Browse History
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Users Account</CardTitle>
-                <CardItem variant="item">Here reside all the users of the website.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Users</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Users Account
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the users of the website.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-users/${params.id}`}
+                            >
+                                Browse Users
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Reputation Reviews</CardTitle>
-                <CardItem variant="item">Here reside all the reviews made by users.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Reviews</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Reputation Reviews
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside all the reviews made by users.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-reviews/${params.id}`}
+                            >
+                                Browse Reviews
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Sanction System</CardTitle>
-                <CardItem variant="item">Here reside the process of banishment.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Banishments</Button>
-            </CardSection>
-        </Card>
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Sanction System
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside the process of banishment.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-sanctions/${params.id}`}
+                            >
+                                Browse Sanctions
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
 
-        <Card>
-            <CardSection variant="characteristics">
-                <CardTitle>Financial Dashboard</CardTitle>
-                <CardItem variant="item">Here reside the cashflow of the website.</CardItem>
-            </CardSection>
-            <CardSection variant="buttons">
-                <Button>Browse Cashflow</Button>
-            </CardSection>
-        </Card> */}
+                    <CustomSection variant="article" style="column">
+                        <CustomSection variant="section" style="column">
+                            <CustomHeading variant="h4" style="h2">
+                                Financial Dashboard
+                            </CustomHeading>
+                            <CustomHeading variant="p" style="p">
+                                Here reside the cashflow of the website.
+                            </CustomHeading>
+                        </CustomSection>
+                        <CustomSection variant="section" style="row">
+                            <CustomButton
+                                variant="link"
+                                to={`/admin-financial/${params.id}`}
+                            >
+                                Browse Cashflow
+                            </CustomButton>
+                        </CustomSection>
+                    </CustomSection>
+                </>
+            ) : null}
         </>
     );
 }
