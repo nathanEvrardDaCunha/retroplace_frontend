@@ -12,11 +12,18 @@ import { ProductsPage } from './pages/visitors/ProductsPage';
 import { RegisterPage } from './pages/visitors/RegisterPage';
 import { ResetPasswordPage } from './pages/visitors/ResetPasswordPage';
 import { AccountReportsPage } from './pages/loggers/(customer)/AccountReportsPage';
+import { BrowseUserPage } from './pages/loggers/(admin)/BrowseUsersPage';
+import { BrowseUserReportPage } from './pages/loggers/(admin)/BrowseUserReportPage';
+import { BrowseUsersBanPage } from './pages/loggers/(admin)/BrowseUsersBanPage';
 
 // TODO: Implement authentication for theses routes:
 // - account/:id
 // - account-modification/:id
 // - account-reports/:id
+// - browse-users
+
+// - browse-users-reports/:id
+// - /browse-users-bans
 
 // TODO: Add theses following routes/pages:
 // - About us
@@ -36,6 +43,10 @@ const router = createBrowserRouter([
     { path: '/account/:id', element: <AccountPage /> },
     { path: '/account-modification/:id', element: <AccountModificationPage /> },
     { path: '/account-reports/:id', element: <AccountReportsPage /> },
+
+    { path: '/browse-users', element: <BrowseUserPage /> },
+    { path: '/browse-users-reports/:id', element: <BrowseUserReportPage /> },
+    { path: '/browse-users-bans', element: <BrowseUsersBanPage /> },
     { path: '/*', element: <NotFoundPage /> },
 ]);
 

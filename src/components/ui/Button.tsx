@@ -26,6 +26,8 @@ type ButtonProps = DefaultButton | LinkButton;
 // IDEA: Make to optional with ternary
 // IDEA: Make onClick optional with ternary
 
+// IDEA: For disabled button, mark down inside them (instead of their child) "Disabled"
+
 export function Button(props: ButtonProps) {
     const buttonDisabled =
         props.disabled === undefined ? false : props.disabled;
