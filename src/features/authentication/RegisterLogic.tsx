@@ -8,7 +8,13 @@ import { CustomSection } from '../../components/ui/CustomSection';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../components/ui/Button';
 
+console.log(`This test the render of the component OUTSIDE with console.log`);
+
 export function RegisterLogic() {
+    console.log(
+        `This test the render of the component INSIDE with console.log`
+    );
+
     const [formUsername, setFormUsername] = useState('');
     const [formEmail, setFormEmail] = useState('');
     const [formPassword, setFormPassword] = useState('');
